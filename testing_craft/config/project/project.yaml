@@ -1,0 +1,25 @@
+dateModified: 1715698874
+email:
+  fromEmail: jairoln@hotmail.com
+  fromName: werkpakket
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    2fb73641-2ef5-4f0d-89a6-07a59cbae8f5: 'Public Schema' # Public Schema
+    58547a28-0e8c-418b-bdc6-e0211364b3df: werkpakket # werkpakket
+    ee5497d1-9593-4f71-981f-00cff6b18b31: werkpakket # werkpakket
+system:
+  edition: pro
+  live: true
+  name: werkpakket
+  schemaVersion: 5.0.0.20
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  deactivateByDefault: false
+  defaultGroup: ''
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true
+  validateOnPublicRegistration: false

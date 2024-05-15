@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: werkpakket
+primary: true
+siteGroup: ee5497d1-9593-4f71-981f-00cff6b18b31 # werkpakket
+sortOrder: 1
