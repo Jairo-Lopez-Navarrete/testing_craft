@@ -1,4 +1,4 @@
-dateModified: 1715789311
+dateModified: 1715956801
 email:
   fromEmail: jairoln@hotmail.com
   fromName: werkpakket
@@ -6,8 +6,10 @@ email:
 meta:
   __names__:
     2fb73641-2ef5-4f0d-89a6-07a59cbae8f5: 'Public Schema' # Public Schema
+    268df043-087f-4f48-8efc-1bba7e92b653: homepagina # homepagina
     8957c3e0-f665-45ed-8642-1458091261dc: header # header
     58547a28-0e8c-418b-bdc6-e0211364b3df: werkpakket # werkpakket
+    098569c8-f00d-4c16-af6c-547cdc5355ca: partials # partials
     ee5497d1-9593-4f71-981f-00cff6b18b31: werkpakket # werkpakket
 system:
   edition: pro

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producten</title>
+  <link rel="icon" href="/fotos/logo.png">
+  <link rel="stylesheet" href="../main.css">
+  <script src="../jsfiles/producten.js"></script>
+</head>
+
+<body>
+<div id="loader"></div>
+<!-- Navbar -->
+<div class="navbar">
+  <div class="logo">
+    <img src="../fotos/logo.png" height="42px"/>
+  </div>
+  <a  href="index.html">Homepagina</a>
+  <a class="active" href="producten.html">Producten</a>
+  <div class="login">
+    <a href="login.html">Login</a>
+  </div>
+  <div class="cart">
+    <a href="paginanietgevonden.html">  <img src="../fotos/winkelwagen.png"/></a>
+    <div class="badge">0</div>
+  </div>
+</div>
+<!-- Paginatie -->
+<div>
+  <ul class="pagination">
+
+  </ul>
+</div>
+<!-- Filters -->
+<div class="filters">
+  <div class="filter-container">
+    <div class="filter">
+      <label for="price-filter">Prijs:</label>
+      <select id="price-filter">
+        <option value="all">Alle prijzen</option>
+        <option value="cheap">Goedkoop</option>
+        <option value="expensive">Duur</option>
+      </select>
+    </div>
+
+    <div class="filter">
+      <label for="use-filter">Gebruik:</label>
+      <select id="use-filter">
+        <option value="all">Alle headsets</option>
+        <option value="professional">Professioneel</option>
+        <option value="home">Thuis</option>
+        <option value="travel">Reizen</option>
+      </select>
+    </div>
+  </div>
+</div>
+<!-- Producten-->
+<div class="productcontainer">
+  <div class="product" data-prijs="99.99" data-gewicht="200" data-gebruik="professional">
+    <a href="productpagina.html"> <img src="../fotos/corsair1.jpg" alt="Product 1" class="product-afbeelding"></a>
+    <h3 class="product-titel"><a href="productpagina.html">Corsair HS35</a></h3>
+    <p class="product-info">Product van de maand</p>
+    <p class="product-info">Batterijduur: 28 uur</p>
+    <p class="product-info">Gewicht: 200 gram</p>
+    <p class="product-prijs">€99.99</p>
+    <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button>  </div>
+
+  <div class="product" data-prijs="149.99" data-gewicht="280" data-gebruik="travel">
+    <img src="../fotos/phoenix1.jpg" alt="Product 1" class="product-afbeelding">
+    <h3 class="product-titel"><a href="#">PhoenixXperience Wireless Pro</a></h3>
+    <p class="product-info">Product van de maand</p>
+    <p class="product-info">Batterijduur: 40 uur</p>
+    <p class="product-info">Gewicht: 280 gram</p>
+    <p class="product-prijs">€149.99</p>
+    <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button>  </div>
+
+  <div class="product" data-prijs="129.99" data-gewicht="260" data-gebruik="professional">
+    <img src="../fotos/eliteaudio1.jpg" alt="Product 1" class="product-afbeelding">
+    <h3 class="product-titel"><a href="#">EliteAudio Noise-Canceling Master</a></h3>
+    <p class="product-info">Product van de maand</p>
+    <p class="product-info">Batterijduur: 35 uur</p>
+    <p class="product-info">Gewicht: 260 gram</p>
+    <p class="product-prijs">€129.99</p>
+    <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button>  </div>
+
+  <div class="product" data-prijs="99.99" data-gewicht="240" data-gebruik="home">
+    <img src="../fotos/aero1.jpg" alt="Product 1" class="product-afbeelding">
+    <h3 class="product-titel"><a href="#">AeroSound High-End Performer</a></h3>
+    <p class="product-info">Keuze van GenkTech</p>
+    <p class="product-info">Batterijduur: 30 uur</p>
+    <p class="product-info">Gewicht: 240 gram</p>
+    <p class="product-prijs">€99.99</p>
+    <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button>  </div>
+  <div class="product" data-prijs="89.99" data-gewicht="220" data-gebruik="home">
+    <img src="../fotos/techbeat1.jpg" alt="Product 1" class="product-afbeelding">
+    <h3 class="product-titel"><a href="#">TechBeat Pro Gaming Headset</a></h3>
+    <p class="product-info">Keuze van GenkTech</p>
+    <p class="product-info">Batterijduur:  25 uur</p>
+    <p class="product-info">Gewicht: 220 gram</p>
+    <p class="product-prijs">€89.99</p>
+    <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button>  </div>
+
+  <div class="product" data-prijs="49.99" data-gewicht="200" data-gebruik="travel">
+    <img src="../fotos/rapid1.jpg" alt="Product 1" class="product-afbeelding">
+    <h3 class="product-titel"><a href="#">RapidAudio Comfort Series</a></h3>
+    <p class="product-info">Keuze van GenkTech</p>
+    <p class="product-info">Batterijduur: 20 uur</p>
+    <p class="product-info">Gewicht: 200 gram</p>
+    <p class="product-prijs">€49.99</p>
+    <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button>  </div>
+
+  <div class="product" data-prijs="69.99" data-gewicht="180" data-gebruik="home">
+    <img src="../fotos/sonic1.jpg" alt="Product 1" class="product-afbeelding">
+    <h3 class="product-titel"><a href="#">SonicBoom Basic Edition</a></h3>
+    <p class="product-info">Keuze van GenkTech</p>
+    <p class="product-info">Batterijduur: 15 uur</p>
+    <p class="product-info">Gewicht: 180 gram</p>
+    <p class="product-prijs">€69.99</p>
+    <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button>  </div>
+
+  <div class="product" data-prijs="29.99" data-gewicht="150" data-gebruik="home">
+    <img src="../fotos/betablast1.jpg" alt="Product 1" class="product-afbeelding">
+    <h3 class="product-titel"><a href="#">BetaBlast Lite Headset</a></h3>
+    <p class="product-info">Keuze van GenkTech</p>
+    <p class="product-info">Batterijduur: 12 uur</p>
+    <p class="product-info">Gewicht: 150 gram</p>
+    <p class="product-prijs">€29,99</p>
+    <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button>  </div>
+
+<div class="product" data-prijs="179.99" data-gewicht="360" data-gebruik="home">
+  <img src="../fotos/dt990.jpg" alt="Product 1" class="product-afbeelding">
+  <h3 class="product-titel"><a href="#">Beyerdynamic DT 990 Pro</a></h3>
+  <p class="product-info">Keuze van GenkTech</p>
+  <p class="product-info">Batterijduur: 15 uur</p>
+  <p class="product-info">Gewicht: 360 gram</p>
+  <p class="product-prijs">€179.99</p>
+  <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button></div>
+
+<div class="product" data-prijs="129.99" data-gewicht="390" data-gebruik="home">
+  <img src="../fotos/razenkraken.jpg" alt="Product 1" class="product-afbeelding">
+  <h3 class="product-titel"><a href="#">Razer Kraken Ultimate</a></h3>
+  <p class="product-info">Keuze van GenkTech</p>
+  <p class="product-info">Batterijduur: 12 uur</p>
+  <p class="product-info">Gewicht: 390 gram</p>
+  <p class="product-prijs">€129,99</p>
+  <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button></div>
+
+<div class="product" data-prijs="69.99" data-gewicht="180" data-gebruik="home">
+  <img src="../fotos/sonywh.jpg" alt="Product 1" class="product-afbeelding">
+  <h3 class="product-titel"><a href="#">Sony WH-1000XM4</a></h3>
+  <p class="product-info">Keuze van GenkTech</p>
+  <p class="product-info">Batterijduur:  254 gram</p>
+  <p class="product-info">Gewicht: 254 gram</p>
+  <p class="product-prijs">€349.99</p>
+  <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button></div>
+
+<div class="product" data-prijs="29.99" data-gewicht="150" data-gebruik="home">
+  <img src="../fotos/sennheiner.jpg" alt="Product 1" class="product-afbeelding">
+  <h3 class="product-titel"><a href="#">Sennheiser HD 660 S</a></h3>
+  <p class="product-info">Keuze van GenkTech</p>
+  <p class="product-info">Batterijduur: 12 uur</p>
+  <p class="product-info">Gewicht: 260 gram</p>
+  <p class="product-prijs">€499.99</p>
+  <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button></div>
+
+
+<div class="product" data-prijs="69.99" data-gewicht="235" data-gebruik="travel">
+  <img src="../fotos/bosequiet.jpg" alt="Product 1" class="product-afbeelding">
+  <h3 class="product-titel"><a href="#">Bose QuietComfort 35 II</a></h3>
+  <p class="product-info">Keuze van GenkTech</p>
+  <p class="product-info">Batterijduur: 20 uur</p>
+  <p class="product-info">Gewicht: 235 gram</p>
+  <p class="product-prijs">€69.99</p>
+  <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button></div>
+
+<div class="product" data-prijs="249.99" data-gewicht="289" data-gebruik="travel">
+  <img src="../fotos/voyager.jpg" alt="Product 1" class="product-afbeelding">
+  <h3 class="product-titel"><a href="#"> Plantronics Voyager 8200 UC</a></h3>
+  <p class="product-info">Keuze van GenkTech</p>
+  <p class="product-info">Batterijduur: 24 uur</p>
+  <p class="product-info">Gewicht: 289 gram</p>
+  <p class="product-prijs">€249.99</p>
+  <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button></div>
+
+<div class="product" data-prijs="149.99" data-gewicht="180" data-gebruik="professional">
+  <img src="../fotos/jbl.jpg" alt="Product 1" class="product-afbeelding">
+  <h3 class="product-titel"><a href="#">JBL Quantum 400</a></h3>
+  <p class="product-info">Keuze van GenkTech</p>
+  <p class="product-info">Batterijduur: bedraad</p>
+  <p class="product-info">Gewicht: 240 gram</p>
+  <p class="product-prijs">€90</p>
+  <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button></div>
+
+<div class="product" data-prijs="499" data-gewicht="286" data-gebruik="professional">
+  <img src="../fotos/shure.jpg" alt="Product 1" class="product-afbeelding">
+  <h3 class="product-titel"><a href="#">Shure SRH1540</a></h3>
+  <p class="product-info">Keuze van GenkTech</p>
+  <p class="product-info">Batterijduur: 12 uur</p>
+  <p class="product-info">Gewicht: 286 gram</p>
+  <p class="product-prijs">€499.99</p>
+  <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button></div>
+
+  <div class="product" data-prijs="600" data-gewicht="285" data-gebruik="travel">
+    <img src="../fotos/appleairpods.jpg" alt="Product 1" class="product-afbeelding">
+    <h3 class="product-titel"><a href="#">Apple AirPods Max</a></h3>
+    <p class="product-info">Keuze van GenkTech</p>
+    <p class="product-info">Batterijduur: 20 uur</p>
+    <p class="product-info">Gewicht: 385 gram</p>
+    <p class="product-prijs">€600</p>
+    <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button>  </div>
+
+  <div class="product" data-prijs="300" data-gewicht="260" data-gebruik="home">
+    <img src="../fotos/beats.jpg" alt="Product 1" class="product-afbeelding">
+    <h3 class="product-titel"><a href="#">Beats Studio3 Wireless</a></h3>
+    <p class="product-info">Keuze van GenkTech</p>
+    <p class="product-info">Batterijduur: 22 uur</p>
+    <p class="product-info">Gewicht: : 260 gram</p>
+    <p class="product-prijs">€300</p>
+    <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button>  </div>
+
+  <div class="product" data-prijs="330" data-gewicht="357" data-gebruik="professional">
+    <img src="../fotos/steelseries.jpg" alt="Product 1" class="product-afbeelding">
+    <h3 class="product-titel"><a href="#">SteelSeries Arctis Pro Wireless</a></h3>
+    <p class="product-info">Keuze van GenkTech</p>
+    <p class="product-info">Batterijduur: bedraad</p>
+    <p class="product-info">Gewicht: 357 gram</p>
+    <p class="product-prijs">€330</p>
+    <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button>  </div>
+
+  <div class="product" data-prijs="499" data-gewicht="289" data-gebruik="professional">
+    <img src="../fotos/planton.jpg" alt="Product 1" class="product-afbeelding">
+    <h3 class="product-titel"><a href="#">Plantronics BackBeat PRO 2</a></h3>
+    <p class="product-info">Keuze van GenkTech</p>
+    <p class="product-info">Batterijduur: 24 uur</p>
+    <p class="product-info">Gewicht: 289 gram</p>
+    <p class="product-prijs">€200</p>
+    <button> <img class="winkelwageninbutton" src="../fotos/winkelwagen.png" height=""/> In winkelwagen</button>  </div>
+
+</div>
+  <!-- Kenmerken -->
+  <div class="blauwe-lijn"></div>
+<div class="kenmerken">
+  <div class="kenmerk">
+    <img src="../fotos/retour.webp" alt="Gratis retour" width="100" height="100">
+    <h3>Gratis Retour</h3>
+    <p>Retourneer gratis binnen 60 dagen</p>
+  </div>
+  <div class="kenmerk">
+    <img src="../fotos/levering.webp" alt="Snelle levering" width="100" height="100">
+    <h3>Levering Morgen</h3>
+    <p>Bestel voor 22:00 uur voor levering morgen</p>
+  </div>
+
+  <div class="kenmerk">
+    <img src="../fotos/headsetex.webp" alt="Exclusieve headsets" width="100" height="100">
+    <h3>Exclusieve Headsets</h3>
+    <p>Alleen op deze website verkrijgbaar</p>
+  </div>
+
+  <div class="kenmerk">
+    <img src="../fotos/mail.webp" alt="24/7 Hulp" width="100" height="100">
+    <h3>24/7 Hulp</h3>
+    <p>Altijd beschikbaar via mail of chat</p>
+  </div>
+</div>
+<!-- Footer-->
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <div class="logo">
+        <a href=""><img src="../fotos/logo.png" alt="Logo" height="60">
+        </a>
+      </div>
+
+      <p class="footer-description">Kwaliteit headsets voor de beste prijs</p>
+      <div class="social-icons">
+        <a href=""> <img src="../fotos/facebook.png" alt="Facebook" height="30"> </a>
+        <a href="">  <img src="../fotos/instagram.png" alt="Instagram" height="30"> </a>
+        <a href="">  <img src="../fotos/x.png" alt="Twitter" height="30"> </a>
+      </div>
+    </div>
+
+    <div class="footer-center">
+      <p class="footer-title">Navigeer</p>
+      <nav>
+        <ul class="footer-menu">
+          <li><a href="index.html">Homepagina</a></li>
+          <li><a href="producten.html">Producten</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-right">
+      <div class="contact-info">
+        <p class="contact-detail">Email: esatesitmez@gmail.com</p>
+        <p class="contact-detail">Adres: Jeweestraat 8, 3600 Genk, België</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
