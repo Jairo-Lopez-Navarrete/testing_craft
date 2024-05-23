@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - f610a9f3-8f78-4580-a8fb-e34221279f19 # navbar
+handle: navbar
+maxAuthors: 1
+name: navbar
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  58547a28-0e8c-418b-bdc6-e0211364b3df: # werkpakket
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single

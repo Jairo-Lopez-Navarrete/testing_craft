@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: twitterurl
+instructions: null
+name: twitterUrl
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

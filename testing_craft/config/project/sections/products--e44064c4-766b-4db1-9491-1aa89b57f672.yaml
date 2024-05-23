@@ -1,0 +1,29 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 8d3a99d9-3101-47fc-9107-7543b92db70e # productsone
+  - cc163d59-eda6-413f-94d5-7ddd57c2d5a6 # productsTwo
+  - 2abf7a5d-2f4e-4822-9f4b-79506ef87c32 # productsThree
+handle: products
+maxAuthors: 1
+name: products
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - product
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  58547a28-0e8c-418b-bdc6-e0211364b3df: # werkpakket
+    enabledByDefault: true
+    hasUrls: true
+    template: products.twig
+    uriFormat: 'product/{slug}'
+type: channel

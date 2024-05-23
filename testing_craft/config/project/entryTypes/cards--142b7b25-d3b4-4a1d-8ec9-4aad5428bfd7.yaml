@@ -1,0 +1,197 @@
+color: null
+fieldLayouts:
+  1d660b94-5d5c-480a-980b-cb73c7a6c33b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5b9d5c3d-ce01-4968-b3ee-f4782ca4ca5f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a44fed1c-c05f-4845-8ea2-edf46f0c215b # imageCardone
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9a2d1eed-e762-409d-a91b-4305b667e057
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9054f531-f6a2-49fe-bb65-f02c978be480 # titleCardone
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a373b6c6-f457-4183-9538-b6c19eb47ef9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c0bca1f4-b5de-4f9b-8637-8f34772cc412 # descriptionCardone
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1a9b35b4-bb39-4d94-91ff-c22679de9319
+            userCondition: null
+            warning: null
+            width: 100
+        name: card1
+        uid: dd16d71a-a10f-46ff-9cc6-af5f63f4d78e
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d7592c49-0a35-4880-9753-29ecab461059 # imagecardtwo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e19c3bf2-e904-4bfe-a73c-f1a11a09744d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ed0029a8-3340-4693-b333-8f4307cbe03d # titlecardtwo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 651e3e3a-7fcc-47d6-8ab0-462dadc6af09
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a94c1db9-d870-4d95-b32f-c98712d9a698 # descriptioncardtwo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b3674d40-bd3b-4a21-9e0e-4c21cf375f37
+            userCondition: null
+            warning: null
+            width: 100
+        name: card2
+        uid: 1fb70a92-9033-49b3-8d06-fb76726df6f6
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b5f0bcad-e2f8-4fbe-92d0-4328f9f40e9b # imagecardthree
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3ab5ff0d-2c7b-47d5-9819-a07de9c1f7af
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c86069bc-f741-495c-9239-f33fad8bc197 # titlecardthree
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b11d4d8d-7c8a-4e85-896e-23d39e0036ab
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fb76d52f-5ab9-4226-b069-7d842160171c # descriptioncardthree
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e75ba945-0415-453e-99d4-d182d7de82cf
+            userCondition: null
+            warning: null
+            width: 100
+        name: card3
+        uid: cd2e5332-47a7-48e6-9a84-f8b6ec539be2
+        userCondition: null
+handle: cards
+hasTitleField: true
+icon: ''
+name: cards
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

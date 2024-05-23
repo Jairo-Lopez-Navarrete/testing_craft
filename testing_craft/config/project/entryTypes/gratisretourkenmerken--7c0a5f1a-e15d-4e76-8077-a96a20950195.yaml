@@ -1,0 +1,95 @@
+color: null
+fieldLayouts:
+  9042cc26-6884-476d-9f88-07be68b5486f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d82ae347-5170-41dd-90b0-61150fe3bd0f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fb0763c8-19df-4430-9967-16d3e66ed354 # afbeeldingkenmerken
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9a705578-91e6-41d6-8dd2-e9a93801a229
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: dbfe2b89-70bc-4af4-b0ea-0d1c717247e0 # titlekenmerken
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 14e43dff-a9bf-4a91-aa13-c35d40da26b7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 405c30fb-85f0-4721-a892-6827dac9f877 # textkenmerken
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b79f75ab-f60e-40cd-b60d-9187fa34df38
+            userCondition: null
+            warning: null
+            width: 100
+        name: gratisretour
+        uid: acef8b30-69cf-41b2-83b1-8b7e648235a2
+        userCondition: null
+handle: gratisretourkenmerken
+hasTitleField: true
+icon: ''
+name: gratisretourkenmerken
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

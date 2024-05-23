@@ -1,24 +1,35 @@
+{% set cards = craft.entries.section('cards').all() %}
+
 <div class="kaart-container">
-    <div class="kaart">
-        <a href="producten.html"> <img src="{{ siteUrl }}fotos/gamen.jpg" alt="Avatar 1" style="width:100%"></a>
-        <div class="inhoud">
-            <h4 class="kop"><b>Headsets voor thuis</b></h4>
-            <p class="tekst">Ontdek de perfecte balans tussen comfort en geluidskwaliteit met onze thuisgebruik headsets. Geniet van meeslepende audio-ervaringen en langdurig comfort, waardoor je thuis werken, entertainment of gamen naar nieuwe hoogten tilt</p>
+    {% for card in cards %}
+        <div class="kaart">
+            <a href="{{ card.linkUrl }}">
+                <img src="{{ card.imagecardone.one().url }}" alt="{{ card.titlecardone }}" style="width:100%">
+            </a>
+            <div class="inhoud">
+                <h4 class="kop"><b>{{ card.titlecardone }}</b></h4>
+                <p class="tekst">{{ card.descriptioncardone }}</p>
+            </div>
         </div>
-    </div>
-    <div class="kaart">
-        <a href="producten.html"> <img src="{{ siteUrl }}fotos/draaien.png" style="width:100%"></a>
-        <div class="inhoud">
-            <h4 class="kop"><b>Headsets voor professioneel gebruik</b></h4>
-            <p class="tekst">Duik in een wereld van comfort en eersteklas geluid voor professionals met onze zakelijke headsets. Ervaar uitzonderlijke
-                audiokwaliteit tijdens het werk en geniet van langdurig draagcomfort, waardoor je professionele taken naar ongekende niveaus tilt.</p>
+
+        <div class="kaart">
+            <a href="{{ card.linkUrl }}">
+                <img src="{{ card.imagecardtwo.one().url }}" alt="{{ card.titlecardtwo }}" style="width:100%">
+            </a>
+            <div class="inhoud">
+                <h4 class="kop"><b>{{ card.titlecardtwo }}</b></h4>
+                <p class="tekst">{{ card.descriptioncardtwo }}</p>
+            </div>
         </div>
-    </div>
-    <div class="kaart">
-        <a href="producten.html"> <img src="{{ siteUrl }}fotos/reizen.webp" alt="Avatar 2" style="width:100%"></a>
-        <div class="inhoud">
-            <h4 class="kop"><b>Headsets om te reizen</b></h4>
-            <p class="tekst">Ontdek comfort en topgeluid tijdens je reizen met onze headsets. Geniet onderweg van meeslepende audio-ervaringen voor werk, entertainment of gaming. Reis in stijl en comfort met onze compacte metgezellen.</p>
+
+        <div class="kaart">
+            <a href="{{ card.linkUrl }}">
+                <img src="{{ card.imagecardone.one().url }}" alt="{{ card.titlecardone }}" style="width:100%">
+            </a>
+            <div class="inhoud">
+                <h4 class="kop"><b>{{ card.titlecardthree }}</b></h4>
+                <p class="tekst">{{ card.descriptioncardthree }}</p>
+            </div>
         </div>
-    </div>
+    {% endfor %}
 </div>

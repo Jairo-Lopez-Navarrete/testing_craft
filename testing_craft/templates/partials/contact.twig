@@ -4,33 +4,35 @@
             <div class="contact-links">
                 <div class="contact-details address details">
                     <div class="topic">Adres</div><br>
-                    <div class="text-one">Jeweestraat 8</div>
-                    <div class="text-two">3600 Genk, België</div>
+                    <div class="text-one">{{ craft.globals.getSetByHandle('contactinformatie').adresLijn1 }}</div>
+                    <div class="text-two">{{ craft.globals.getSetByHandle('contactinformatie').adresLijn2 }}</div>
                 </div>
                 <div class="contact-details phone details">
                     <div class="topic">Telefoon</div><br>
-                    <div class="text-one">+32487268802</div>
+                    <div class="text-one">{{ craft.globals.getSetByHandle('contactinformatie').telefoon }}</div>
                 </div>
                 <div class="contact-details email details">
                     <div class="topic">E-mail</div><br>
-                    <div class="text-two">esatesitmez@gmail.com</div>
+                    <div class="text-two">{{ craft.globals.getSetByHandle('contactinformatie').email }}</div>
                 </div>
             </div>
             <div class="contact-formulier-rechts">
                 <div class="contact-titel">Contacteer ons</div>
                 <p>Als je ons wilt contacteren kunt u dat doen door deze form in te vullen.</p>
-                <form action="#">
+                <form method="post" action="" accept-charset="UTF-8">
+                    {{ csrfInput() }}
+                    {{ actionInput('contact-form/submit') }}
                     <div class="contact-input-box">
-                        <input class="formuliertekst" type="text" placeholder="Voer je naam of klantnummer in">
+                        <input class="formuliertekst" type="text" name="naam" placeholder="Voer je naam of klantnummer in">
                     </div>
                     <div class="contact-input-box">
-                        <input class="formuliertekst" type="text" placeholder="Voer je e-mailadres in">
+                        <input class="formuliertekst" type="email" name="email" placeholder="Voer je e-mailadres in">
                     </div>
                     <div class="contact-input-box contact-message-box">
-                        <textarea class="formuliertekst"placeholder="Voer je bericht in"></textarea>
+                        <textarea class="formuliertekst" name="bericht" placeholder="Voer je bericht in"></textarea>
                     </div>
                     <div class="contact-button">
-                        <input type="button" value="Nu verzenden">
+                        <input type="submit" value="Nu verzenden">
                     </div>
                 </form>
             </div>

@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 7c0a5f1a-e15d-4e76-8077-a96a20950195 # gratisretourkenmerken
+  - bc39fb42-3140-4fae-a9e5-c599c49a6678 # leveringmorgenkenmerken
+  - 97a961cf-7291-459a-ac42-d70809ee24c9 # exclusieveKenmerken
+  - bf93fc19-f9d3-480f-80bb-77a6179097ea # hulpkenmerken
+handle: kenmerken
+maxAuthors: 1
+name: kenmerken
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  58547a28-0e8c-418b-bdc6-e0211364b3df: # werkpakket
+    enabledByDefault: true
+    hasUrls: true
+    template: kenmerken/_entry
+    uriFormat: 'kenmerken/{slug}'
+type: channel

@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: herobutton
+instructions: 'Bekijk producten'
+name: heroButton
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: 'Bekijk producten'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

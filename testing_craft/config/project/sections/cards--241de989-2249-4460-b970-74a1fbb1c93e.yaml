@@ -1,10 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 098569c8-f00d-4c16-af6c-547cdc5355ca # partials
-handle: homepagina
+  - 142b7b25-d3b4-4a1d-8ec9-4aad5428bfd7 # cards
+handle: cards
 maxAuthors: 1
-name: homepagina
+name: cards
 previewTargets:
   -
     __assoc__:
@@ -22,6 +22,6 @@ siteSettings:
   58547a28-0e8c-418b-bdc6-e0211364b3df: # werkpakket
     enabledByDefault: true
     hasUrls: true
-    template: index.twig
-    uriFormat: __home__
-type: single
+    template: cards.twig
+    uriFormat: 'cards/{slug}'
+type: channel

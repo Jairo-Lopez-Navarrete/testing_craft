@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: herodescription
+instructions: null
+name: heroDescription
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 2
+  multiline: true
+  placeholder: 'Ontdek onze geweldige producten en profiteer van exclusieve aanbiedingen.'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

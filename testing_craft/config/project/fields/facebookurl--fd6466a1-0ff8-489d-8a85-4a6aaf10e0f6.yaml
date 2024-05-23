@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: facebookurl
+instructions: null
+name: facebookUrl
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

@@ -1,0 +1,72 @@
+fieldLayouts:
+  e643be4d-6323-439d-93d0-5fb8238f8059:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6fcddfac-aa6c-42c1-9e36-35c895c36663 # Adreslijnone
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 07f2ab00-9364-4624-861f-e05ec81b0881
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ec6b91c2-0239-498c-83e3-b8aaee14417d # adreslijntwo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 883dd781-cfbc-4094-ac11-e40cd067260f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e557f3d7-ebf9-4b61-994d-1077d68e2b40 # telefoon
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 747b8d6f-d497-4795-ac51-8c916c98e29a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bd39e989-7ea8-4065-bdca-827babfc3b35 # email
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 45f2a479-1aac-4ff3-ae70-3f9cf4f0b7ff
+            userCondition: null
+            warning: null
+            width: 100
+        name: contactinformatie
+        uid: 03ede160-fb3b-4d25-84b5-938377777f6c
+        userCondition: null
+handle: contactinformatie
+name: contactinformatie
+sortOrder: 2

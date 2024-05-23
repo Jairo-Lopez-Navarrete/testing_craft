@@ -1,0 +1,95 @@
+color: null
+fieldLayouts:
+  6e660592-1572-44ef-9a71-03f377f7e605:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a7a2c358-284d-4bdf-9a99-a9e06b5404af
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fb0763c8-19df-4430-9967-16d3e66ed354 # afbeeldingkenmerken
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 623a0ee5-1510-4cf2-9655-ac076976832d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: dbfe2b89-70bc-4af4-b0ea-0d1c717247e0 # titlekenmerken
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ca46ff91-b231-42e6-905c-a5cb55408297
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 405c30fb-85f0-4721-a892-6827dac9f877 # textkenmerken
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 000d84c6-b349-4c05-bfec-79f07fade2a3
+            userCondition: null
+            warning: null
+            width: 100
+        name: leveringKenmerken
+        uid: 28bfba8b-dd47-4027-b82e-774cc18c3ced
+        userCondition: null
+handle: leveringmorgenkenmerken
+hasTitleField: true
+icon: ''
+name: leveringmorgenkenmerken
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

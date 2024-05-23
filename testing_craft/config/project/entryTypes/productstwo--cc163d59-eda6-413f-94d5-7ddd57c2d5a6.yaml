@@ -1,0 +1,140 @@
+color: null
+fieldLayouts:
+  8c7e9e78-bc6b-4b26-9ec5-1d2fc1dc743c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: productstwo
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 380ef7b1-30b2-4d28-a506-ae47a06c9f94
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3ab6d4cf-34f7-4318-994a-ffd02b6d76d4 # imageproduct
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8efe1d42-a1d0-46a1-b76d-f6e5da0cc4d6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e1d0b93c-b243-4467-aad5-03b8465973c4 # titleproduct
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 931ec409-1d33-41a3-bce9-94df7f2c28ae
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5cdeb9d3-6593-4c13-8610-dc70c406867e # batterylifeproduct
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 469a16f6-2e5f-4e1c-b99e-cc1c04a64db3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d85749a2-e539-45d9-a08c-92d9c879780c # weightproduct
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6bdcd303-dbff-4b96-a351-c6656a2998ed
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 41f1b00e-f6b4-49b2-acfa-675f82475060 # priceproduct
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 83d6062f-780f-47ad-82a7-85444fe6d6a5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e58860c8-016e-4624-b57e-7f9770a4cad1 # buttonimageproduct
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3aac9037-c124-48b9-8641-3b067ac38874
+            userCondition: null
+            warning: null
+            width: 100
+        name: product_two
+        uid: 552ba6ac-3dee-4ce4-ab88-e6f49e37310c
+        userCondition: null
+handle: productstwo
+hasTitleField: true
+icon: ''
+name: productsTwo
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

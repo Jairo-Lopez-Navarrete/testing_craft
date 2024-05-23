@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: navhome
+instructions: null
+name: navHome
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

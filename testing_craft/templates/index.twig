@@ -1,24 +1,11 @@
-{% extends "_layout" %}
+{% extends "_layout.twig" %}
 
 {% block content %}
-    
-    {% include "partials/navbar" %}
-
-    
-    {% include "partials/hero" %}
-
-    
-    {% include "partials/cards" %}
-
-    <!-- Producten van de Maand -->
-    {% include "partials/products" %}
-
-   
-    {% include "partials/features" %}
-
-    
-    {% include "partials/contact" %}
-
-    
-    {% include "partials/footer" %}
+    {% include 'partials/navbar.twig' %}
+    {% include 'partials/hero.twig' %}
+    {% include 'partials/cards.twig' %}
+    {% include 'partials/products.twig' %}
+    {% include 'partials/features.twig' %}
+    {% include 'partials/contact.twig' %}
+    {% include 'partials/footer.twig' %}
 {% endblock %}

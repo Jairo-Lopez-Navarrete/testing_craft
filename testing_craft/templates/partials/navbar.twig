@@ -1,14 +1,21 @@
+{% set navbar = craft.entries.section('navbar').one() %}
+
 <div class="navbar">
     <div class="logo">
-        <img src="{{ siteUrl }}fotos/logo.png" height="42px"/>
+        <a href="{{ siteUrl }}">
+            <img src="{{ navbar.logoImage.one().url }}" height="42px" alt="Logo"/>
+        </a>
     </div>
-    <a class="active" href="index.html">Homepagina</a>
-    <a href="producten.html">Producten</a>
+    <a class="{{ currentPage == 'home' ? 'active' : '' }}" href="{{ siteUrl }}">{{ navbar.navhome }}</a>
+    <a class="{{ currentPage == 'producten' ? 'active' : '' }}" href="{{ siteUrl ~ 'producten' }}">{{ navbar.navproducten }}</a>
+    <a class="{{ currentPage == 'shop' ? 'active' : '' }}" href="{{ siteUrl ~ 'shop' }}">{{ navbar.navshop }}</a>
     <div class="login">
-        <a href="login.html">Login</a>
+        <a href="{{ siteUrl ~ 'login' }}">{{ navbar.navlogin }}</a>
     </div>
     <div class="cart">
-        <a href="paginanietgevonden.html">  <img src="{{ siteUrl }}fotos/winkelwagen.png"/></a>
+        <a href="{{ siteUrl ~ 'cart' }}">
+            <img src="{{ navbar.cartImage.one().url }}" alt="Cart"/>
+        </a>
         <div class="badge">0</div>
     </div>
 </div>
