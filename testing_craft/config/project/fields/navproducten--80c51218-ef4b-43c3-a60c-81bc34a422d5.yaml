@@ -4,9 +4,13 @@ instructions: null
 name: navProducten
 searchable: false
 settings:
-  maxLength: 255
-  types:
-    - url
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Url
+type: craft\fields\PlainText

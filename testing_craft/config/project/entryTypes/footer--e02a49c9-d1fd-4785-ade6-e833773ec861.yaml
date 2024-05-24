@@ -96,21 +96,6 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 99488747-877e-43d5-af21-e8a8958a649a # navigationLinks
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 42adbd81-50d7-4884-a720-42771c3f4dd6
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: bd39e989-7ea8-4065-bdca-827babfc3b35 # email
             handle: null
             includeInCards: false
@@ -120,7 +105,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 941c369c-38ec-4066-ba9c-b1e41e9b9c62
+            uid: 1cfac224-ae55-464b-bab4-05f26ac69b62
             userCondition: null
             warning: null
             width: 100
@@ -139,8 +124,59 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Content
+        name: footer
         uid: de7f2b51-7e91-4724-b5c5-e0a41fe0020c
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b21380c9-70ac-4861-acbf-bce0ee9bf13a # link1
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4d4dabb9-3d59-498a-b7bf-b5df9030cf9b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1b23b535-50f0-404d-b93e-0fbf17fdcb64 # link2
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c27894ee-4fee-485f-bcd4-e89bba01921c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3de3078a-6a53-4ac6-8c62-2e1888c4b496 # link3
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 54f695d0-ca0c-4af2-874e-27278b13b482
+            userCondition: null
+            warning: null
+            width: 100
+        name: navigationLinks
+        uid: 5bc389fc-e7a1-4b41-b7c1-c2647fd219ef
         userCondition: null
 handle: footer
 hasTitleField: true

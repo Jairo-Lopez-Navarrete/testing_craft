@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  08f1367d-5dbd-4cfd-8b31-dfa0e54257a8:
+  ddbd466a-6f0c-4afa-9a52-2e751b2dd2fc:
     tabs:
       -
         elementCondition: null
@@ -16,7 +16,7 @@ fieldLayouts:
             includeInCards: false
             inputType: null
             instructions: null
-            label: null
+            label: navigationlinks
             max: null
             min: null
             name: null
@@ -30,13 +30,13 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 0bb02628-379b-428b-aa4a-24649c4280c2
+            uid: 63a08351-d28b-4125-abc2-5e801751277c
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 3ab6d4cf-34f7-4318-994a-ffd02b6d76d4 # imageproduct
+            fieldUid: b21380c9-70ac-4861-acbf-bce0ee9bf13a # link1
             handle: null
             includeInCards: false
             instructions: null
@@ -45,13 +45,13 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c8ca0614-123e-4149-9f3b-254d51012660
+            uid: 7ffbd5b4-5a66-46eb-a8e4-3d828735aa38
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: e1d0b93c-b243-4467-aad5-03b8465973c4 # titleproduct
+            fieldUid: 1b23b535-50f0-404d-b93e-0fbf17fdcb64 # link2
             handle: null
             includeInCards: false
             instructions: null
@@ -60,13 +60,13 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c4726dab-7311-48f7-be3b-98cc9d2ea616
+            uid: 4a966049-ca77-42b1-9a24-85361fd153cc
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 5cdeb9d3-6593-4c13-8610-dc70c406867e # batterylifeproduct
+            fieldUid: 3de3078a-6a53-4ac6-8c62-2e1888c4b496 # link3
             handle: null
             includeInCards: false
             instructions: null
@@ -75,62 +75,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 4bcb37af-1561-4c7a-849a-35b71f83ccbf
+            uid: d191a4bd-617f-4c89-9660-9a7ca3499f59
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: d85749a2-e539-45d9-a08c-92d9c879780c # weightproduct
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: d51c0ab6-2c87-4c51-ad8c-775d57b53718
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 41f1b00e-f6b4-49b2-acfa-675f82475060 # priceproduct
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: a27999df-a9fb-47d5-ba7e-a8b89e8ebeb0
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: e58860c8-016e-4624-b57e-7f9770a4cad1 # buttonproduct
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 424eed9c-d3bb-43d9-9817-065bef5fb8a3
-            userCondition: null
-            warning: null
-            width: 100
-        name: productsthree
-        uid: 815c7cc1-5f2a-40eb-8fe9-9975f910af48
+        name: navigationLinks
+        uid: 70733a79-1d15-40e1-8351-b698f64527a2
         userCondition: null
-handle: productsthree
+handle: navgationlinks
 hasTitleField: true
 icon: ''
-name: productsThree
+name: navgationlinks
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

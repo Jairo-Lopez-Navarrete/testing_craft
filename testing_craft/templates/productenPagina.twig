@@ -1,0 +1,11 @@
+{% extends "_layouts/main" %}
+
+{% block content %}
+  <h1>Producten Pagina</h1>
+  {% set producten = craft.entries.section('producten').all() %}
+  {% include '_partials/producten.twig' with { producten: producten } %}
+  {% include '_partials/navbar.twig' %}
+  {% include '_partials/filters.twig' %}
+  {% include '_partials/footer.twig' %}
+  {% include '_partials/features.twig' %}
+{% endblock %}

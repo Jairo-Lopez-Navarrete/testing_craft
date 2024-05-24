@@ -1,20 +1,31 @@
 {% set navbar = craft.entries.section('navbar').one() %}
 
+
 <div class="navbar">
     <div class="logo">
         <a href="{{ siteUrl }}">
-            <img src="{{ navbar.logoImage.one().url }}" height="42px" alt="Logo"/>
+            {% if navbar.logoImage | length %}
+                <img src="{{ navbar.logoImage.one().url }}" height="42px" alt="Logo"/>
+            {% else %}
+                <img src="{{ siteUrl }}fotos/logo.png" height="42px" alt="Logo"/>
+            {% endif %}
         </a>
     </div>
     <a class="{{ currentPage == 'home' ? 'active' : '' }}" href="{{ siteUrl }}">{{ navbar.navhome }}</a>
-    <a class="{{ currentPage == 'producten' ? 'active' : '' }}" href="{{ siteUrl ~ 'producten' }}">{{ navbar.navproducten }}</a>
-    <a class="{{ currentPage == 'shop' ? 'active' : '' }}" href="{{ siteUrl ~ 'shop' }}">{{ navbar.navshop }}</a>
+    <a class="{{ currentPage == 'producten' ? 'active' : '' }}" href="{{ siteUrl('productenPagina') }}">{{ navbar.navproducten }}</a>
+    {% set testUrl = url('productenPagina') %}
+<p>Test URL: {{ testUrl }}</p>
+    <a class="{{ currentPage == 'shop' ? 'active' : '' }}" href="{{ siteUrl }}shop">{{ navbar.navshop }}</a>
     <div class="login">
-        <a href="{{ siteUrl ~ 'login' }}">{{ navbar.navlogin }}</a>
+        <a href="{{ siteUrl }}login">{{ navbar.navlogin }}</a>
     </div>
     <div class="cart">
-        <a href="{{ siteUrl ~ 'cart' }}">
-            <img src="{{ navbar.cartImage.one().url }}" alt="Cart"/>
+        <a href="{{ siteUrl }}cart">
+            {% if navbar.cartImage | length %}
+                <img src="{{ siteUrl }}fotos/winkelwagen.png" alt="Cart"/>
+            {% else %}
+                <img src="{{ siteUrl }}fotos/winkelwagen.png" alt="Cart"/>
+            {% endif %}
         </a>
         <div class="badge">0</div>
     </div>

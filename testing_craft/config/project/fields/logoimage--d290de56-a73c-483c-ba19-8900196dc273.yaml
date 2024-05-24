@@ -1,22 +1,24 @@
 columnSuffix: null
-handle: imageproduct
+handle: logoimage
 instructions: null
-name: imageproduct
+name: logoImage
 searchable: false
 settings:
   allowSelfRelations: false
   allowSubfolders: false
   allowUploads: true
-  allowedKinds: null
+  allowedKinds:
+    - image
+    - pdf
   branchLimit: null
   defaultUploadLocationSource: 'volume:c4ed4c35-300a-457f-b099-7d3aa69972c9' # afbeeldingnavbar
-  defaultUploadLocationSubpath: web/fotos
+  defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
   previewMode: full
-  restrictFiles: false
+  restrictFiles: true
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:c4ed4c35-300a-457f-b099-7d3aa69972c9' # afbeeldingnavbar

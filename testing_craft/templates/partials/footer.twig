@@ -1,5 +1,6 @@
 {% set footer = craft.entries.section('footer').one() %}
 
+
 <footer class="site-footer">
     <div class="footer-content">
         <div class="footer-left">
@@ -15,13 +16,15 @@
         </div>
         <div class="footer-center">
             <p class="footer-title">Navigeer</p>
-            <nav>
-                <ul class="footer-menu">
-                    {% for link in footer.navigationLinks %}
-                        <li><a href="{{ link.url }}">{{ link.label }}</a></li>
-                    {% endfor %}
-                </ul>
-            </nav>
+            {% if footer.link1 %}
+             <a href="{{ footer.link1 }}">{{ footer.link1 }}</a>
+                {% endif %}
+           {% if footer.link2 %}
+             <a href="{{ footer.link2 }}">{{ footer.link2 }}</a>
+           {% endif %}
+           {% if footer.link3 %}
+             <a href="{{ footer.link3 }}">{{ footer.link3 }}</a>
+           {% endif %}
         </div>
         <div class="footer-right">
             <div class="contact-info">

@@ -13,14 +13,13 @@
                 <img src="{{ product.imageproduct.one().url }}" alt="{{ product.titleproduct }}" class="product-afbeelding">
             </a>
             <h3 class="product-titel">
-                <a href="{{ product.url }}">{{ product.titleproduct }}</a>
+                <a href="{{ products.url }}">{{ product.titleproduct }}</a>
             </h3>
-            <p class="product-info">Batterijduur: {{ product.batterylifeproduct }}</p>
-            <p class="product-info">Gewicht: {{ product.weightproduct }} gram</p>
+            <p class="product-info">{{ product.batterylifeproduct }}</p>
+            <p class="product-info">{{ product.weightproduct }} gram</p>
             <p class="product-prijs">{{ product.priceproduct }}</p>
             <button>
-                <img class="winkelwageninbutton" src="{{ product.buttonimageproduct.one().url }}" height=""/>
-                In winkelwagen
+                <p>{{ product.buttonproduct }}</p>
             </button>
         </div>
         {% endfor %}

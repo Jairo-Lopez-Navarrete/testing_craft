@@ -1,4 +1,4 @@
-dateModified: 1716468178
+dateModified: 1716521960
 email:
   fromEmail: jairoln@hotmail.com
   fromName: werkpakket
@@ -13,19 +13,29 @@ fs:
     url: $ASSET_BASE_URL
 meta:
   __names__:
+    0f6503cb-810f-49e1-a346-b0118e6dd297: producten2 # producten2
     1afb89b7-2f78-4a96-ae3c-9258a6196bbd: contactinformatie # contactinformatie
+    1b23b535-50f0-404d-b93e-0fbf17fdcb64: link2 # link2
     2abf7a5d-2f4e-4822-9f4b-79506ef87c32: productsThree # productsThree
     2dcac1e8-637e-4a7a-b7cd-1b092cbc03f8: navLogin # navLogin
     2fb73641-2ef5-4f0d-89a6-07a59cbae8f5: 'Public Schema' # Public Schema
     3ab6d4cf-34f7-4318-994a-ffd02b6d76d4: imageproduct # imageproduct
+    3de3078a-6a53-4ac6-8c62-2e1888c4b496: link3 # link3
+    3dedf5a9-f7c5-46df-a5a0-36c78f056a1c: productenafbeelding # productenafbeelding
     5cdeb9d3-6593-4c13-8610-dc70c406867e: batterylifeproduct # batterylifeproduct
+    6a22f367-9451-4381-8f7e-cc3d38e682db: producten3 # producten3
+    6d64669a-fd86-4cd1-ba7a-199bc71fc390: productentitel # productentitel
     6fcddfac-aa6c-42c1-9e36-35c895c36663: Adreslijnone # Adreslijnone
     7c0a5f1a-e15d-4e76-8077-a96a20950195: gratisretourkenmerken # gratisretourkenmerken
+    7ef1ad33-b74a-4c44-bdf8-9fa43d81fe81: productenbekijkbutton # productenbekijkbutton
     8c5d7d43-b7d5-4836-ae07-05a04d3e97b0: address # address
     8ca87005-2a06-4ea0-b48e-099d36045a60: hero # hero
     8d3a99d9-3101-47fc-9107-7543b92db70e: productsone # productsone
+    27bb0f13-40df-4501-9efd-b545881dbcbb: navgationlinks # navgationlinks
+    38d8cbb1-9d0d-4620-8acd-5afcfcff7810: productenprijs # productenprijs
     41f1b00e-f6b4-49b2-acfa-675f82475060: priceproduct # priceproduct
     43b62817-972f-4504-9b7e-3ea595ac2ac8: footerDescription # footerDescription
+    63e176ca-a26e-4863-8799-f58009f46234: producten1 # producten1
     63f840bf-ab51-4023-8723-30847955beb5: navbar # navbar
     63faedf8-1e61-41fd-ae1f-c01130ca4a9f: navShop # navShop
     80c51218-ef4b-43c3-a60c-81bc34a422d5: navProducten # navProducten
@@ -42,13 +52,16 @@ meta:
     a44fed1c-c05f-4845-8ea2-edf46f0c215b: imageCardone # imageCardone
     a94c1db9-d870-4d95-b32f-c98712d9a698: descriptioncardtwo # descriptioncardtwo
     b5f0bcad-e2f8-4fbe-92d0-4328f9f40e9b: imagecardthree # imagecardthree
+    b21380c9-70ac-4861-acbf-bce0ee9bf13a: link1 # link1
     bc39fb42-3140-4fae-a9e5-c599c49a6678: leveringmorgenkenmerken # leveringmorgenkenmerken
     bd39e989-7ea8-4065-bdca-827babfc3b35: email # email
     bf93fc19-f9d3-480f-80bb-77a6179097ea: hulpkenmerken # hulpkenmerken
     c0bca1f4-b5de-4f9b-8637-8f34772cc412: descriptionCardone # descriptionCardone
+    c4ed4c35-300a-457f-b099-7d3aa69972c9: afbeeldingnavbar # afbeeldingnavbar
     c86069bc-f741-495c-9239-f33fad8bc197: titlecardthree # titlecardthree
     cc163d59-eda6-413f-94d5-7ddd57c2d5a6: productsTwo # productsTwo
     d2b9a222-ad9b-4a59-a22d-3766d6a16fe4: twitterUrl # twitterUrl
+    d290de56-a73c-483c-ba19-8900196dc273: logoImage # logoImage
     d7592c49-0a35-4880-9753-29ecab461059: imagecardtwo # imagecardtwo
     d85749a2-e539-45d9-a08c-92d9c879780c: weightproduct # weightproduct
     dbfe2b89-70bc-4af4-b0ea-0d1c717247e0: titlekenmerken # titlekenmerken
@@ -61,7 +74,7 @@ meta:
     e6ce05a3-cb85-4b4c-95a4-1afb429c441f: linkUrl # linkUrl
     e557f3d7-ebf9-4b61-994d-1077d68e2b40: telefoon # telefoon
     e44064c4-766b-4db1-9491-1aa89b57f672: products # products
-    e58860c8-016e-4624-b57e-7f9770a4cad1: buttonimageproduct # buttonimageproduct
+    e58860c8-016e-4624-b57e-7f9770a4cad1: buttonproduct # buttonproduct
     ec6b91c2-0239-498c-83e3-b8aaee14417d: adreslijntwo # adreslijntwo
     ed0029a8-3340-4693-b333-8f4307cbe03d: titlecardtwo # titlecardtwo
     ee5497d1-9593-4f71-981f-00cff6b18b31: werkpakket # werkpakket
@@ -72,6 +85,7 @@ meta:
     fb0763c8-19df-4430-9967-16d3e66ed354: afbeeldingkenmerken # afbeeldingkenmerken
     fb76d52f-5ab9-4226-b069-7d842160171c: descriptioncardthree # descriptioncardthree
     fd6466a1-0ff8-489d-8a85-4a6aaf10e0f6: facebookUrl # facebookUrl
+    fe9e088b-47a8-4da3-8f5a-f1218685595e: producten # producten
 system:
   edition: pro
   live: true

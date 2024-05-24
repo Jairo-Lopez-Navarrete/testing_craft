@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: navhome
+handle: productentitel
 instructions: null
-name: navHome
+name: productentitel
 searchable: false
 settings:
   byteLimit: null

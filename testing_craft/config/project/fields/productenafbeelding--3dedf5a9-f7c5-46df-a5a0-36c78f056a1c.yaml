@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: buttonimageproduct
+handle: productenafbeelding
 instructions: null
-name: buttonimageproduct
+name: productenafbeelding
 searchable: false
 settings:
   allowSelfRelations: false
@@ -9,7 +9,7 @@ settings:
   allowUploads: true
   allowedKinds: null
   branchLimit: null
-  defaultUploadLocationSource: null
+  defaultUploadLocationSource: 'volume:c4ed4c35-300a-457f-b099-7d3aa69972c9' # afbeeldingnavbar
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
@@ -19,11 +19,11 @@ settings:
   restrictFiles: false
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: null
+  restrictedLocationSource: 'volume:c4ed4c35-300a-457f-b099-7d3aa69972c9' # afbeeldingnavbar
   restrictedLocationSubpath: null
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: true
+  showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources: '*'

@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: navhome
+handle: link1
 instructions: null
-name: navHome
+name: link1
 searchable: false
 settings:
   byteLimit: null

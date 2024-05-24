@@ -1,0 +1,64 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  039f04cc-6e56-43c7-a9de-f5679876447b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: afbeeldingNav
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: ed570a76-8879-4580-a9bb-d4d9b982fddb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d290de56-a73c-483c-ba19-8900196dc273 # logoImage
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c2bc74cc-e3a1-4ee4-9bbd-decf55b75a72
+            userCondition: null
+            warning: null
+            width: 100
+        name: afbeeldingNav
+        uid: 380520dc-f46a-4d19-ac3f-d00c9d5699e9
+        userCondition: null
+fs: uploads
+handle: afbeeldingnavbar
+name: afbeeldingnavbar
+sortOrder: 2
+subpath: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''
