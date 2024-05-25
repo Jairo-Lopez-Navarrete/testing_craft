@@ -22,6 +22,6 @@ siteSettings:
   58547a28-0e8c-418b-bdc6-e0211364b3df: # werkpakket
     enabledByDefault: true
     hasUrls: true
-    template: footer.twig
+    template: partials/footer.twig
     uriFormat: footer
 type: single

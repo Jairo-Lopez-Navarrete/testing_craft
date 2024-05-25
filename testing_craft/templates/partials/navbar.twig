@@ -1,6 +1,5 @@
 {% set navbar = craft.entries.section('navbar').one() %}
 
-
 <div class="navbar">
     <div class="logo">
         <a href="{{ siteUrl }}">
@@ -13,16 +12,14 @@
     </div>
     <a class="{{ currentPage == 'home' ? 'active' : '' }}" href="{{ siteUrl }}">{{ navbar.navhome }}</a>
     <a class="{{ currentPage == 'producten' ? 'active' : '' }}" href="{{ siteUrl('productenPagina') }}">{{ navbar.navproducten }}</a>
-    {% set testUrl = url('productenPagina') %}
-<p>Test URL: {{ testUrl }}</p>
-    <a class="{{ currentPage == 'shop' ? 'active' : '' }}" href="{{ siteUrl }}shop">{{ navbar.navshop }}</a>
+    <a class="{{ currentPage == 'shop' ? 'active' : '' }}" href="{{ siteUrl('winkelmand') }}">{{ navbar.navshop }}</a>
     <div class="login">
-        <a href="{{ siteUrl }}login">{{ navbar.navlogin }}</a>
+        <a href="{{ siteUrl('login') }}">{{ navbar.navlogin }}</a>
     </div>
     <div class="cart">
         <a href="{{ siteUrl }}cart">
             {% if navbar.cartImage | length %}
-                <img src="{{ siteUrl }}fotos/winkelwagen.png" alt="Cart"/>
+                <img src="{{ navbar.cartImage.one().url }}" alt="Cart"/>
             {% else %}
                 <img src="{{ siteUrl }}fotos/winkelwagen.png" alt="Cart"/>
             {% endif %}

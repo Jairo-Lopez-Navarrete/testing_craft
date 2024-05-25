@@ -4,9 +4,9 @@ entryTypes:
   - 63e176ca-a26e-4863-8799-f58009f46234 # producten1
   - 0f6503cb-810f-49e1-a346-b0118e6dd297 # producten2
   - 6a22f367-9451-4381-8f7e-cc3d38e682db # producten3
-handle: producten
+handle: product
 maxAuthors: 1
-name: producten
+name: product
 previewTargets:
   -
     __assoc__:
@@ -23,7 +23,7 @@ propagationMethod: all
 siteSettings:
   58547a28-0e8c-418b-bdc6-e0211364b3df: # werkpakket
     enabledByDefault: true
-    hasUrls: true
-    template: partials/producten.twig
-    uriFormat: 'producten/{slug}'
+    hasUrls: false
+    template: null
+    uriFormat: null
 type: channel

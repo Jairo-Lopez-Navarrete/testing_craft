@@ -1,4 +1,4 @@
-dateModified: 1716521960
+dateModified: 1716595458
 email:
   fromEmail: jairoln@hotmail.com
   fromName: werkpakket
@@ -16,6 +16,7 @@ meta:
     0f6503cb-810f-49e1-a346-b0118e6dd297: producten2 # producten2
     1afb89b7-2f78-4a96-ae3c-9258a6196bbd: contactinformatie # contactinformatie
     1b23b535-50f0-404d-b93e-0fbf17fdcb64: link2 # link2
+    1f25f34a-2c4a-42be-b07b-b06902cd273a: producteninfo # producteninfo
     2abf7a5d-2f4e-4822-9f4b-79506ef87c32: productsThree # productsThree
     2dcac1e8-637e-4a7a-b7cd-1b092cbc03f8: navLogin # navLogin
     2fb73641-2ef5-4f0d-89a6-07a59cbae8f5: 'Public Schema' # Public Schema
@@ -31,6 +32,7 @@ meta:
     8c5d7d43-b7d5-4836-ae07-05a04d3e97b0: address # address
     8ca87005-2a06-4ea0-b48e-099d36045a60: hero # hero
     8d3a99d9-3101-47fc-9107-7543b92db70e: productsone # productsone
+    8e5c7b65-2c3a-4b71-bad5-6a0324774bae: productengebruik # productengebruik
     27bb0f13-40df-4501-9efd-b545881dbcbb: navgationlinks # navgationlinks
     38d8cbb1-9d0d-4620-8acd-5afcfcff7810: productenprijs # productenprijs
     41f1b00e-f6b4-49b2-acfa-675f82475060: priceproduct # priceproduct
@@ -48,6 +50,7 @@ meta:
     822e62d0-8fd2-4d69-b078-5f7f53e2bc4e: Homepage # Homepage
     9054f531-f6a2-49fe-bb65-f02c978be480: titleCardone # titleCardone
     58547a28-0e8c-418b-bdc6-e0211364b3df: werkpakket # werkpakket
+    61030d7a-4412-43f6-9ffe-1fd3ada9c87f: productengewicht # productengewicht
     99488747-877e-43d5-af21-e8a8958a649a: navigationLinks # navigationLinks
     a44fed1c-c05f-4845-8ea2-edf46f0c215b: imageCardone # imageCardone
     a94c1db9-d870-4d95-b32f-c98712d9a698: descriptioncardtwo # descriptioncardtwo
@@ -85,7 +88,7 @@ meta:
     fb0763c8-19df-4430-9967-16d3e66ed354: afbeeldingkenmerken # afbeeldingkenmerken
     fb76d52f-5ab9-4226-b069-7d842160171c: descriptioncardthree # descriptioncardthree
     fd6466a1-0ff8-489d-8a85-4a6aaf10e0f6: facebookUrl # facebookUrl
-    fe9e088b-47a8-4da3-8f5a-f1218685595e: producten # producten
+    fe9e088b-47a8-4da3-8f5a-f1218685595e: product # product
 system:
   edition: pro
   live: true

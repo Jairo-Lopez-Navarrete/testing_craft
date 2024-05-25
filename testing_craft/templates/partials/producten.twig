@@ -1,0 +1,12 @@
+<div class="productcontainer">
+    {% for product in producten %}
+    <div class="product" data-prijs="{{ product.productenprijs }}" data-gewicht="{{ product.productengewicht }}" data-gebruik="{{ product.productengebruik }}">
+        <a href="{{ product.url }}"> <img src="{{ product.productenafbeelding }}" alt="{{ product.productentitel }}" class="product-afbeelding"></a>
+        <h3 class="product-titel"><a href="{{ product.url }}">{{ product.productentitel }}</a></h3>
+        <p class="product-info">{{ product.producteninfo }}</p>
+        <p class="product-info">Batterijduur: </p>
+        <p class="product-info">Gewicht: {{ product.productengewicht }} gram</p>
+        <p class="product-prijs">€{{ product.productenprijs }}</p>
+    </div>
+    {% endfor %}
+</div>
