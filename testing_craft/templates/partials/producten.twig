@@ -4,9 +4,22 @@
         <a href="{{ product.url }}"> <img src="{{ product.productenafbeelding }}" alt="{{ product.productentitel }}" class="product-afbeelding"></a>
         <h3 class="product-titel"><a href="{{ product.url }}">{{ product.productentitel }}</a></h3>
         <p class="product-info">{{ product.producteninfo }}</p>
-        <p class="product-info">Batterijduur: </p>
-        <p class="product-info">Gewicht: {{ product.productengewicht }} gram</p>
-        <p class="product-prijs">€{{ product.productenprijs }}</p>
+        <p class="product-info">{{ product.productenbatterij }} </p>
+        <p class="product-info"> {{ product.productengewicht }} gram</p>
+        <p class="product-prijs">{{ product.productenprijs }}</p>
+        <button class="product-button">{{ product.productenbekijkbutton }}</button>
     </div>
     {% endfor %}
 </div>
+
+{% block content %}
+    <div class="product-list">
+        {% for product in products %}
+            {% include "components/product.html.twig" with {
+                title: product.productentitel,
+                price: product.productenprijs,
+                image: product.productenafbeelding,
+            } %}
+        {% endfor %}
+    </div>
+{% endblock %}

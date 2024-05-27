@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 4
+template: detailpagina
+uriParts:
+  - detailpagina
+uriPattern: detailpagina

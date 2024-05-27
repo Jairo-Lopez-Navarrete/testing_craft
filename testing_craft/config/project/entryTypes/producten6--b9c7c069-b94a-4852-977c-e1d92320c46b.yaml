@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  648c64e1-bc2c-4546-8a22-50828828bcbb:
+  4805a19c-4b8d-4083-bc1c-5ce1b56bfa4e:
     tabs:
       -
         elementCondition: null
@@ -16,7 +16,7 @@ fieldLayouts:
             includeInCards: false
             inputType: null
             instructions: null
-            label: productenpagina
+            label: producten6
             max: null
             min: null
             name: null
@@ -30,7 +30,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: fdcf3769-ed8b-47ae-89c9-1a9069393b89
+            uid: 12a9c240-d923-4583-bebb-0bf4b525fe5b
             userCondition: null
             warning: null
             width: 100
@@ -45,7 +45,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: fe531c26-e737-44cc-a552-4fbf10ac38ef
+            uid: 1c2fee0a-cebd-4791-9b6a-aad1d34103f9
             userCondition: null
             warning: null
             width: 100
@@ -60,7 +60,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: dbd3d42e-a7e0-44b8-a94b-755be7989b95
+            uid: 2b67ae38-c73b-4df6-937b-7d42c4e3c464
             userCondition: null
             warning: null
             width: 100
@@ -75,7 +75,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3bec31a3-5d52-470a-b32e-06cc7aa689e2
+            uid: dfdc6539-2cd4-4a3e-8f7e-5db606b6a920
             userCondition: null
             warning: null
             width: 100
@@ -90,22 +90,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: cf6f03c1-396c-4166-9c3c-9b9bf9bcd5f7
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 8e5c7b65-2c3a-4b71-bad5-6a0324774bae # productengebruik
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 631e6a64-c9d9-4e42-926b-7495118e81fb
+            uid: 6782ccd9-ce4c-4561-af36-0f786ee4e2ce
             userCondition: null
             warning: null
             width: 100
@@ -120,7 +105,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f580eb49-885b-4ac7-93cf-84b3d545920f
+            uid: 997af25d-c4c2-489c-9ddd-f610d5e9016c
             userCondition: null
             warning: null
             width: 100
@@ -135,7 +120,22 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8357ebd3-a26b-443f-9e9b-84a39156aab3
+            uid: e8869ef2-f316-4ca0-bba8-03ae9646ea00
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8e5c7b65-2c3a-4b71-bad5-6a0324774bae # productengebruik
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 489c04b7-3540-4821-991f-91df3a721c13
             userCondition: null
             warning: null
             width: 100
@@ -150,17 +150,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f798336a-dd24-4662-a413-1586865b6400
+            uid: ef50203b-d37c-4916-aab0-da8a4ac86860
             userCondition: null
             warning: null
             width: 100
-        name: productenpagina
-        uid: 3ef262b7-34f7-4842-af3c-405b3ff44972
+        name: producten6
+        uid: 72aa4d9c-0311-4ff9-81da-210b6ff4339e
         userCondition: null
-handle: producten2
+handle: producten6
 hasTitleField: true
 icon: ''
-name: producten2
+name: producten6
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

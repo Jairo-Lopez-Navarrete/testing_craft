@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  648c64e1-bc2c-4546-8a22-50828828bcbb:
+  e4aa40d9-c5d2-453a-b7ef-1aad522e12c3:
     tabs:
       -
         elementCondition: null
@@ -16,7 +16,7 @@ fieldLayouts:
             includeInCards: false
             inputType: null
             instructions: null
-            label: productenpagina
+            label: producten9
             max: null
             min: null
             name: null
@@ -30,7 +30,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: fdcf3769-ed8b-47ae-89c9-1a9069393b89
+            uid: 2dda1de8-be53-4015-81a6-cbb9ef2dde3e
             userCondition: null
             warning: null
             width: 100
@@ -45,7 +45,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: fe531c26-e737-44cc-a552-4fbf10ac38ef
+            uid: 77fa8772-babf-44cd-bab2-772d3ede0dfa
             userCondition: null
             warning: null
             width: 100
@@ -60,7 +60,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: dbd3d42e-a7e0-44b8-a94b-755be7989b95
+            uid: 25e2c111-0de7-4578-a351-13541bcfc0ea
             userCondition: null
             warning: null
             width: 100
@@ -75,67 +75,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3bec31a3-5d52-470a-b32e-06cc7aa689e2
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: a8058bf4-6f28-459d-9a8e-544d4a80c288 # productenbatterij
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: cf6f03c1-396c-4166-9c3c-9b9bf9bcd5f7
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 8e5c7b65-2c3a-4b71-bad5-6a0324774bae # productengebruik
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 631e6a64-c9d9-4e42-926b-7495118e81fb
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 61030d7a-4412-43f6-9ffe-1fd3ada9c87f # productengewicht
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: f580eb49-885b-4ac7-93cf-84b3d545920f
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 38d8cbb1-9d0d-4620-8acd-5afcfcff7810 # productenprijs
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 8357ebd3-a26b-443f-9e9b-84a39156aab3
+            uid: 2a251575-9db4-480a-a251-cd286594dac8
             userCondition: null
             warning: null
             width: 100
@@ -150,17 +90,92 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f798336a-dd24-4662-a413-1586865b6400
+            uid: 68eba2f5-6876-453c-a4c5-82359af8f77a
             userCondition: null
             warning: null
             width: 100
-        name: productenpagina
-        uid: 3ef262b7-34f7-4842-af3c-405b3ff44972
+          -
+            elementCondition: null
+            fieldUid: 8e5c7b65-2c3a-4b71-bad5-6a0324774bae # productengebruik
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 93c99bc6-9126-42d9-86ae-d04abf9603ed
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a8058bf4-6f28-459d-9a8e-544d4a80c288 # productenbatterij
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 999c3c8f-29fd-40e9-9afe-518cf05e7941
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 61030d7a-4412-43f6-9ffe-1fd3ada9c87f # productengewicht
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 20da2c0b-4edd-4fd8-8afb-ceaf27f25c3a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 38d8cbb1-9d0d-4620-8acd-5afcfcff7810 # productenprijs
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e9ca8917-638e-4533-bc3d-347201f6f1bb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7ef1ad33-b74a-4c44-bdf8-9fa43d81fe81 # productenbekijkbutton
+            handle: productenbekijkbutton2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c0b3e6cb-dbf1-4a78-8a87-14bcb9ff9a09
+            userCondition: null
+            warning: null
+            width: 100
+        name: producten9
+        uid: 706e5d1f-06d8-43a4-9340-fd4048d210fd
         userCondition: null
-handle: producten2
+handle: producten9
 hasTitleField: true
 icon: ''
-name: producten2
+name: producten9
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

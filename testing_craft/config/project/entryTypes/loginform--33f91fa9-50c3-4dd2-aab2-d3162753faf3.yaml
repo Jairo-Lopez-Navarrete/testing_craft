@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  648c64e1-bc2c-4546-8a22-50828828bcbb:
+  6296e7bd-46b0-4fa4-be86-16991ffe08bf:
     tabs:
       -
         elementCondition: null
@@ -16,7 +16,7 @@ fieldLayouts:
             includeInCards: false
             inputType: null
             instructions: null
-            label: productenpagina
+            label: loginform
             max: null
             min: null
             name: null
@@ -30,13 +30,13 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: fdcf3769-ed8b-47ae-89c9-1a9069393b89
+            uid: dad2c965-441b-45fa-9e09-f7e72460832c
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 3dedf5a9-f7c5-46df-a5a0-36c78f056a1c # productenafbeelding
+            fieldUid: 35353d00-4cab-4a0e-a669-d61b256f8254 # logintitel
             handle: null
             includeInCards: false
             instructions: null
@@ -45,13 +45,13 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: fe531c26-e737-44cc-a552-4fbf10ac38ef
+            uid: ba74b327-8e3f-4d05-8551-fa19beb14f58
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 6d64669a-fd86-4cd1-ba7a-199bc71fc390 # productentitel
+            fieldUid: 66b029c1-0cda-4a81-b820-89dc0396d81f # loginnaam
             handle: null
             includeInCards: false
             instructions: null
@@ -60,13 +60,13 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: dbd3d42e-a7e0-44b8-a94b-755be7989b95
+            uid: b29e3f04-8d60-4932-a53d-180b56817170
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 1f25f34a-2c4a-42be-b07b-b06902cd273a # producteninfo
+            fieldUid: cd903379-284c-434e-be64-06113d8ff5d4 # loginwachtwoord
             handle: null
             includeInCards: false
             instructions: null
@@ -75,13 +75,13 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3bec31a3-5d52-470a-b32e-06cc7aa689e2
+            uid: 0be40500-c17a-4e15-8ab6-1dfa47a32983
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: a8058bf4-6f28-459d-9a8e-544d4a80c288 # productenbatterij
+            fieldUid: e7535b6d-523c-4bcd-aea9-6d7fe5d0f55e # loginvergeten
             handle: null
             includeInCards: false
             instructions: null
@@ -90,13 +90,13 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: cf6f03c1-396c-4166-9c3c-9b9bf9bcd5f7
+            uid: c4ab3d3d-6fd0-4f37-8380-c4df054e7308
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 8e5c7b65-2c3a-4b71-bad5-6a0324774bae # productengebruik
+            fieldUid: 9411f8ff-0483-492d-9cc7-2307e15730dd # loginregistreren
             handle: null
             includeInCards: false
             instructions: null
@@ -105,13 +105,13 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 631e6a64-c9d9-4e42-926b-7495118e81fb
+            uid: 2f8445ed-943b-4416-92a8-8679fe018d32
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 61030d7a-4412-43f6-9ffe-1fd3ada9c87f # productengewicht
+            fieldUid: 091a0457-fea5-4a02-9005-55c31413fcf6 # loginbutton
             handle: null
             includeInCards: false
             instructions: null
@@ -120,47 +120,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f580eb49-885b-4ac7-93cf-84b3d545920f
+            uid: 1b09be83-2eb4-4960-8a71-472cbd74b9d3
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: 38d8cbb1-9d0d-4620-8acd-5afcfcff7810 # productenprijs
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 8357ebd3-a26b-443f-9e9b-84a39156aab3
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 7ef1ad33-b74a-4c44-bdf8-9fa43d81fe81 # productenbekijkbutton
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: f798336a-dd24-4662-a413-1586865b6400
-            userCondition: null
-            warning: null
-            width: 100
-        name: productenpagina
-        uid: 3ef262b7-34f7-4842-af3c-405b3ff44972
+        name: loginform
+        uid: 39944ab4-a1d9-43ef-9c54-9643f8f88bc0
         userCondition: null
-handle: producten2
+handle: loginform
 hasTitleField: true
 icon: ''
-name: producten2
+name: loginform
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 33f91fa9-50c3-4dd2-aab2-d3162753faf3 # loginform
+handle: loginform
+maxAuthors: 1
+name: loginform
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  58547a28-0e8c-418b-bdc6-e0211364b3df: # werkpakket
+    enabledByDefault: true
+    hasUrls: true
+    template: partials\loginform.twig
+    uriFormat: loginform
+type: single

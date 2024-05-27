@@ -1,4 +1,5 @@
 {% extends "_layout.twig" %}
+{% set entries = craft.entries.section('product').all() %}
 
 
 
@@ -6,6 +7,7 @@
 {% block content %}
   {% include 'partials/navbar.twig' %}
   {% include 'partials/filters.twig' %}
+  {% include 'partials/paginatie.twig' %}
   {% include 'partials/producten.twig' with { producten: entries } %}
   {% include 'partials/features.twig' %}
   {% include 'partials/footer.twig' %}

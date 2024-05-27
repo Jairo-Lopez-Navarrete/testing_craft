@@ -1,0 +1,26 @@
+<div>
+    <div class="pagination">
+        <button onclick="goToPage({{ currentPage - 1 }})" {{ currentPage == 1 ? 'disabled' : '' }}>&lt;</button>
+        {% for page in 1..totalPages %}
+            <button onclick="goToPage({{ page }})">{{ page }}</button>
+        {% endfor %}
+        <button onclick="goToPage({{ currentPage + 1 }})" {{ currentPage == totalPages ? 'disabled' : '' }}>&gt;</button>
+    </div>
+    <div class="product-list">
+        {% for product in producten %}
+            {% include 'components/product_card.html.twig' with {
+                title: product.productentitel,
+                price: product.productenprijs,
+                image: product.productenafbeelding,
+            } %}
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    function goToPage(page) {
+        const url = new URL(window.location);
+        url.searchParams.set('page', page);
+        window.location = url.toString();
+    }
+</script>

@@ -4,6 +4,13 @@ entryTypes:
   - 63e176ca-a26e-4863-8799-f58009f46234 # producten1
   - 0f6503cb-810f-49e1-a346-b0118e6dd297 # producten2
   - 6a22f367-9451-4381-8f7e-cc3d38e682db # producten3
+  - 24f9a174-db43-4e27-b502-76756cf42a23 # producten4
+  - 9b5b6cf9-557a-4616-9629-fa5652fba628 # producten5
+  - b9c7c069-b94a-4852-977c-e1d92320c46b # producten6
+  - 08a0a900-1f38-4680-8629-fd8224c9f99b # producten7
+  - 5da72c1d-e046-415d-a3fe-5e3b1d0d9b97 # producten8
+  - 8cb93401-475c-4345-a1c3-e42d477fc653 # producten9
+  - 5f4b5971-a3fd-4024-9cec-6cb975958cfd # producten10
 handle: product
 maxAuthors: 1
 name: product

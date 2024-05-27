@@ -1,4 +1,4 @@
-dateModified: 1716595458
+dateModified: 1716640420
 email:
   fromEmail: jairoln@hotmail.com
   fromName: werkpakket
@@ -24,23 +24,32 @@ meta:
     3de3078a-6a53-4ac6-8c62-2e1888c4b496: link3 # link3
     3dedf5a9-f7c5-46df-a5a0-36c78f056a1c: productenafbeelding # productenafbeelding
     5cdeb9d3-6593-4c13-8610-dc70c406867e: batterylifeproduct # batterylifeproduct
+    5da72c1d-e046-415d-a3fe-5e3b1d0d9b97: producten8 # producten8
+    5f4b5971-a3fd-4024-9cec-6cb975958cfd: producten10 # producten10
     6a22f367-9451-4381-8f7e-cc3d38e682db: producten3 # producten3
     6d64669a-fd86-4cd1-ba7a-199bc71fc390: productentitel # productentitel
     6fcddfac-aa6c-42c1-9e36-35c895c36663: Adreslijnone # Adreslijnone
     7c0a5f1a-e15d-4e76-8077-a96a20950195: gratisretourkenmerken # gratisretourkenmerken
     7ef1ad33-b74a-4c44-bdf8-9fa43d81fe81: productenbekijkbutton # productenbekijkbutton
+    08a0a900-1f38-4680-8629-fd8224c9f99b: producten7 # producten7
     8c5d7d43-b7d5-4836-ae07-05a04d3e97b0: address # address
     8ca87005-2a06-4ea0-b48e-099d36045a60: hero # hero
+    8cb93401-475c-4345-a1c3-e42d477fc653: producten9 # producten9
     8d3a99d9-3101-47fc-9107-7543b92db70e: productsone # productsone
     8e5c7b65-2c3a-4b71-bad5-6a0324774bae: productengebruik # productengebruik
+    9b5b6cf9-557a-4616-9629-fa5652fba628: producten5 # producten5
+    24f9a174-db43-4e27-b502-76756cf42a23: producten4 # producten4
     27bb0f13-40df-4501-9efd-b545881dbcbb: navgationlinks # navgationlinks
+    33f91fa9-50c3-4dd2-aab2-d3162753faf3: loginform # loginform
     38d8cbb1-9d0d-4620-8acd-5afcfcff7810: productenprijs # productenprijs
     41f1b00e-f6b4-49b2-acfa-675f82475060: priceproduct # priceproduct
     43b62817-972f-4504-9b7e-3ea595ac2ac8: footerDescription # footerDescription
     63e176ca-a26e-4863-8799-f58009f46234: producten1 # producten1
     63f840bf-ab51-4023-8723-30847955beb5: navbar # navbar
     63faedf8-1e61-41fd-ae1f-c01130ca4a9f: navShop # navShop
+    66b029c1-0cda-4a81-b820-89dc0396d81f: loginnaam # loginnaam
     80c51218-ef4b-43c3-a60c-81bc34a422d5: navProducten # navProducten
+    091a0457-fea5-4a02-9005-55c31413fcf6: loginbutton # loginbutton
     97a961cf-7291-459a-ac42-d70809ee24c9: exclusieveKenmerken # exclusieveKenmerken
     142b7b25-d3b4-4a1d-8ec9-4aad5428bfd7: cards # cards
     241de989-2249-4460-b970-74a1fbb1c93e: cards # cards
@@ -49,12 +58,17 @@ meta:
     616c4d73-05db-42f3-b7b5-8e253693308a: heroTitle # heroTitle
     822e62d0-8fd2-4d69-b078-5f7f53e2bc4e: Homepage # Homepage
     9054f531-f6a2-49fe-bb65-f02c978be480: titleCardone # titleCardone
+    9411f8ff-0483-492d-9cc7-2307e15730dd: loginregistreren # loginregistreren
+    35353d00-4cab-4a0e-a669-d61b256f8254: logintitel # logintitel
     58547a28-0e8c-418b-bdc6-e0211364b3df: werkpakket # werkpakket
     61030d7a-4412-43f6-9ffe-1fd3ada9c87f: productengewicht # productengewicht
+    425982f4-9f70-4b17-beca-db151320e9a8: loginform # loginform
     99488747-877e-43d5-af21-e8a8958a649a: navigationLinks # navigationLinks
     a44fed1c-c05f-4845-8ea2-edf46f0c215b: imageCardone # imageCardone
     a94c1db9-d870-4d95-b32f-c98712d9a698: descriptioncardtwo # descriptioncardtwo
+    a8058bf4-6f28-459d-9a8e-544d4a80c288: productenbatterij # productenbatterij
     b5f0bcad-e2f8-4fbe-92d0-4328f9f40e9b: imagecardthree # imagecardthree
+    b9c7c069-b94a-4852-977c-e1d92320c46b: producten6 # producten6
     b21380c9-70ac-4861-acbf-bce0ee9bf13a: link1 # link1
     bc39fb42-3140-4fae-a9e5-c599c49a6678: leveringmorgenkenmerken # leveringmorgenkenmerken
     bd39e989-7ea8-4065-bdca-827babfc3b35: email # email
@@ -63,6 +77,7 @@ meta:
     c4ed4c35-300a-457f-b099-7d3aa69972c9: afbeeldingnavbar # afbeeldingnavbar
     c86069bc-f741-495c-9239-f33fad8bc197: titlecardthree # titlecardthree
     cc163d59-eda6-413f-94d5-7ddd57c2d5a6: productsTwo # productsTwo
+    cd903379-284c-434e-be64-06113d8ff5d4: loginwachtwoord # loginwachtwoord
     d2b9a222-ad9b-4a59-a22d-3766d6a16fe4: twitterUrl # twitterUrl
     d290de56-a73c-483c-ba19-8900196dc273: logoImage # logoImage
     d7592c49-0a35-4880-9753-29ecab461059: imagecardtwo # imagecardtwo
@@ -76,6 +91,7 @@ meta:
     e5fce629-268d-4762-9a62-f99b28c29202: instagramUrl # instagramUrl
     e6ce05a3-cb85-4b4c-95a4-1afb429c441f: linkUrl # linkUrl
     e557f3d7-ebf9-4b61-994d-1077d68e2b40: telefoon # telefoon
+    e7535b6d-523c-4bcd-aea9-6d7fe5d0f55e: loginvergeten # loginvergeten
     e44064c4-766b-4db1-9491-1aa89b57f672: products # products
     e58860c8-016e-4624-b57e-7f9770a4cad1: buttonproduct # buttonproduct
     ec6b91c2-0239-498c-83e3-b8aaee14417d: adreslijntwo # adreslijntwo

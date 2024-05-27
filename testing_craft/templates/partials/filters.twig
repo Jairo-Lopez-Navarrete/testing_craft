@@ -1,0 +1,72 @@
+{% block content %}
+
+  <div class="productpaginafilter">
+      <div class="filter-section">
+          <h1>Kies waarvoor je soort dient</h1>
+          <div class="select-wrapper">
+              <label>
+                  <select id="soortSelect" class="productselect">
+                      <option value="Alle">Alle</option>
+                      <option value="Persoonlijk">Persoonlijk</option>
+                      <option value="Professioneel">Professioneel</option>
+                  </select>
+              </label>
+          </div>
+      </div>
+
+      <div class="filter-section">
+          <h1>Kies je prijsklasse</h1>
+          <div class="select-wrapper">
+              <label>
+                  <select id="prijsSelect" class="productselect">
+                      <option value="Alle">Alle</option>
+                      <option value="Goedkoop">Goedkoop</option>
+                      <option value="Duur">Duur</option>
+                  </select>
+              </label>
+          </div>
+      </div>
+  </div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const soortSelect = document.getElementById('soortSelect');
+    const prijsSelect = document.getElementById('prijsSelect');
+
+    const emitFilterData = () => {
+        const event = new CustomEvent('filter-data', {
+            detail: {
+                soort: soortSelect.value,
+                prijs: prijsSelect.value
+            }
+        });
+        document.dispatchEvent(event);
+    };
+
+    soortSelect.addEventListener('change', emitFilterData);
+    prijsSelect.addEventListener('change', emitFilterData);
+});
+</script>
+{% endblock %}
+
+{% set soort = craft.app.request.getQueryParam('soort', 'Alle') %}
+{% set prijs = craft.app.request.getQueryParam('prijs', 'Alle') %}
+
+{% set query = craft.entries().section('product') %}
+
+{% if soort != 'Alle' %}
+    {% set query = query.productengebruik(soort) %}
+{% endif %}
+
+{% if prijs != 'Alle' %}
+    {% if prijs == 'Goedkoop' %}
+        {% set query = query.productenprijs('< 50') %}
+    {% elseif prijs == 'Duur' %}
+        {% set query = query.productenprijs('> 50') %}
+    {% endif %}
+{% endif %}
+
+{% set entries = query.all() %}
