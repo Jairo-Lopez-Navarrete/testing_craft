@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 64e7e156-b238-4b8a-be06-70b7d351ecb4 # relatedProduct
+handle: relatedproducts
+maxAuthors: 1
+name: relatedProducts
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  58547a28-0e8c-418b-bdc6-e0211364b3df: # werkpakket
+    enabledByDefault: true
+    hasUrls: true
+    template: relatedproducts/_entry
+    uriFormat: relatedproducts
+type: single

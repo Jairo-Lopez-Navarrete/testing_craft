@@ -1,0 +1,81 @@
+
+<form method="post" action="" class="contact-form">
+    <input type="hidden" name="action" value="contact-form/send-email">
+    <div class="form-group">
+        <label for="name">Naam:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Bericht:</label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit">Verzenden</button>
+    </div>
+</form>
+
+<style>
+
+.contact-form {
+  max-width: 600px;
+  font-family: verdana sans-serif;
+  margin: 100px auto;
+  padding: 1em;
+  background: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+  margin-bottom: 1em;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 0.7em 1.5em;
+  background: #007BFF;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .contact-form {
+      padding: 0.5em;
+  }
+
+  .contact-form button {
+      width: 100%;
+      padding: 1em;
+  }
+}
+</style>

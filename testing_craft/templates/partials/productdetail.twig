@@ -1,40 +1,42 @@
-
+{% set product = craft.entries.section('productDetail').one() %}
+{% set relatedProducts = craft.entries.section('productrelated').relatedTo(product).limit(3).all() %}
 
 {% block content %}
 <div class="breadcrumb">
   <a href="{{ siteUrl('') }}">Homepagina</a> &gt;
   <a href="{{ siteUrl('producten') }}">Producten</a> &gt;
-  <span><b>HS35 Stereo Gaming Headset</b></span>
+  <span><b>{{ product.title }}</b></span>
 </div>
-<!-- Product beschrijving -->
 
+<!-- Product beschrijving -->
 <div>
-  <div class="product-name"><h3>HS35 Stereo Gaming Headset</h3></div>
+  <div class="product-name"><h3>{{ product.title }}</h3></div>
   <div class="product-container">
-    <img id="productImage" src="{{ siteUrl('fotos/corsairhs35.png') }}" alt="Headset" class="product-image">
+     <img class="product-image" src="{{ siteUrl('fotos/corsair1.jpg') }}">
     <div class="thumbnail-container">
-      <img src="{{ siteUrl('fotos/corsairhs35_2.png') }}" alt="Thumbnail 1" class="thumbnail">
-      <img src="{{ siteUrl('fotos/corsairhs35_3.png') }}" alt="Thumbnail 2" class="thumbnail">
-      <img src="{{ siteUrl('fotos/corsairhs35_4.png') }}" alt="Thumbnail 3" class="thumbnail">
+      <img class="thumbnail" src="{{ siteUrl('fotos/corsairhs35_2.png') }}">
+      <img class="thumbnail" src="{{ siteUrl('fotos/corsairhs35_3.png') }}">
+      <img class="thumbnail" src="{{ siteUrl('fotos/corsairhs35_4.png') }}">
     </div>
 
     <div class="product-details">
       <div class="product-description">
-        <p>De HS35 Stereo Gaming Headset is een hoogwaardige hoofdtelefoon die speciaal is ontworpen voor gamers die op zoek zijn naar een meeslepende geluidservaring.
-        Met een stijlvol en ergonomisch ontwerp biedt deze headset comfort, duurzaamheid en indrukwekkend geluid voor een betaalbare prijs.</p>
+        <p>{{ product.productDescription }}</p>
       </div>
       <!-- Technische specificaties -->
       <div class="technische-specificaties">
         <h3>Technische specificaties</h3>
         <ul>
-          <li><strong>Geluidskwaliteit:</strong><b> Uitstekend</b></li>
-          <li><strong>Connectiviteit:</strong> <b>Bedraad</b></li>
-          <li><strong>Compatibiliteit:</strong> <b>PC, Xbox, PlayStation</b></li>
-          <li><strong>Microfoon:</strong> <b>Ruisonderdrukking</b></li>
+          <li><strong>Geluidskwaliteit:</strong><b> {{ product.soundQuality }}</b></li>
+          <li><strong>Connectiviteit:</strong> <b>{{ product.connectivity }}</b></li>
+          <li><strong>Compatibiliteit:</strong> <b>{{ product.compatibility }}</b></li>
+          <li><strong>Microfoon:</strong> <b>{{ product.microphone }}</b></li>
         </ul>
       </div>
 
-      <div class="product-price"><h2 class="productprijsproductpagina"><b>€99.99</b></h2><br> <del><h5>aangeraden prijs: €129.99</h5></del> </div>
+      <div class="product-price"><h2 class="productprijsproductpagina"><b>{{ product.price }}</b></h2><br>
+        <del><h5>aangeraden prijs: {{ product.recommendedPrice }}</h5></del>
+      </div>
       <div>
         <label for="quantity">Hoeveelheid:</label>
         <input type="number" id="quantity" class="inputaantalproductpagina" value="1">
@@ -59,7 +61,7 @@
     <thead>
       <tr>
         <th>Kenmerk</th>
-        <th>HS35 Stereo Gaming Headset</th>
+        <th>{{ product.title }}</th>
         <th>EliteAudio Noise-Canceling Master</th>
         <th>BetaBlast Lite Headset</th>
       </tr>
@@ -67,31 +69,31 @@
     <tbody>
       <tr>
         <td><b>Prijs</b></td>
-        <td>€99.99</td>
+        <td>{{ product.price }}</td>
         <td>€129.99</td>
         <td>€29.99</td>
       </tr>
       <tr>
         <td><b>Geluidskwaliteit</b></td>
-        <td>Uitstekend</td>
+        <td>{{ product.soundQuality }}</td>
         <td>Goed</td>
-        <td>slecht</td>
+        <td>Slecht</td>
       </tr>
       <tr>
         <td><b>Connectiviteit</b></td>
-        <td>Bedraad</td>
+        <td>{{ product.connectivity }}</td>
         <td>Draadloos</td>
         <td>Bedraad</td>
       </tr>
       <tr>
         <td><b>Compatibiliteit</b></td>
-        <td>PC, Xbox, PlayStation</td>
+        <td>{{ product.compatibility }}</td>
         <td>PC, PlayStation</td>
         <td>PC, Xbox</td>
       </tr>
       <tr>
         <td><b>Microfoon</b></td>
-        <td>Ruisonderdrukking</td>
+        <td>{{ product.microphone }}</td>
         <td>Standaard microfoon</td>
         <td>Krachtige ruisonderdrukking</td>
       </tr>
@@ -99,37 +101,52 @@
   </table>
 </div>
 
-<!-- Gerelateerde producten -->
 <div class="gerelateerde-producten">
-  <h3>Gerelateerde producten</h3>
+  <h3>{{ product.beschrijvingproducten }}</h3>
 
   <div class="product-grid">
-    <div class="gerelateerd-product">
-      <a href="">
-        <img src="{{ siteUrl('fotos/sonic1.jpg') }}" alt="product1">
-      </a>
-      <p>Sonic Headset</p>
-      <p class="product-prijs">€69.99</p>
-      <a class="productmeerinfo" href="{{ siteUrl('producten') }}">Meer info</a>
-    </div>
-
-    <div class="gerelateerd-product">
-      <a href="">
-        <img src="{{ siteUrl('fotos/eliteaudio1.jpg') }}" alt="product2">
-      </a>
-      <p>Elite Audio Noise-Canceling Master</p>
-      <p class="product-prijs">€14.99</p>
-      <a class="productmeerinfo" href="{{ siteUrl('/producten') }}">Meer info</a>
-    </div>
-
-    <div class="gerelateerd-product">
-      <a href="">
-        <img src="{{ siteUrl('fotos/techbeat1.jpg') }}" alt="product3">
-      </a>
-      <p>TechBeat Pro Gaming</p>
-      <p class="product-prijs">€89.99</p>
-      <a class="productmeerinfo" href="{{ siteUrl('/producten') }}">Meer info</a>
-    </div>
+    {% for relatedProduct in relatedProducts %}
+      <div class="gerelateerd-product">
+        <a href="{{ relatedProduct.url }}">
+          <img src="{{ siteUrl('fotos/phoenix1.jpg') }}">
+        </a>
+        <p>{{ relatedProduct.title }}</p>
+        <p class="product-prijs">{{ relatedProduct.price }}</p>
+      </div>
+    {% endfor %}
   </div>
 </div>
 {% endblock %}
+
+<div id="mijnDiv">
+    <div class="productcontainer">
+        {% set productSlugs = ['productone', 'producttwo', 'productthree'] %} {# Vervang deze slugs door de daadwerkelijke slugs van je producten #}
+        {% set products = craft.entries()
+            .section('products')
+            .slug(productSlugs)
+            .all() %}
+        
+        {% for key, product in products %}
+        <div class="product">
+            <a href="{{ product.url }}">
+                {% if key == 0 %}
+                    <img src="{{ siteUrl('fotos/bosequiet.jpg') }}" alt="{{ product.titleproduct }}" class="product-afbeelding">
+                {% elseif key == 1 %}
+                    <img src="{{ siteUrl('fotos/planton.jpg') }}" alt="{{ product.titleproduct }}" class="product-afbeelding">
+                {% elseif key == 2 %}
+                    <img src="{{ siteUrl('fotos/phoenix1.jpg') }}" alt="{{ product.titleproduct }}" class="product-afbeelding">
+                {% endif %}
+            </a>
+            <h3 class="product-titel">
+                <a href="{{ products.url }}">{{ product.titleproduct }}</a>
+            </h3>
+            <p class="product-info">{{ product.batterylifeproduct }}</p>
+            <p class="product-info">{{ product.weightproduct }} gram</p>
+            <p class="product-prijs">{{ product.priceproduct }}</p>
+            <button>
+                <p>{{ product.buttonproduct }}</p>
+            </button>
+        </div>
+        {% endfor %}
+    </div>
+</div>

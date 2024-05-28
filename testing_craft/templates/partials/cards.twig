@@ -4,7 +4,7 @@
     {% for card in cards %}
         <div class="kaart">
             <a href="{{ card.linkUrl }}">
-                <img src="{{ card.imagecardone.one().url }}" alt="{{ card.titlecardone }}" style="width:100%">
+                <img src="{{ siteUrl('fotos/gamen.jpg') }}" alt="{{ card.titlecardone }}" style="width:100%">
             </a>
             <div class="inhoud">
                 <h4 class="kop"><b>{{ card.titlecardone }}</b></h4>
@@ -14,7 +14,7 @@
 
         <div class="kaart">
             <a href="{{ card.linkUrl }}">
-                <img src="{{ card.imagecardtwo.one().url }}" alt="{{ card.titlecardtwo }}" style="width:100%">
+                <img src="{{ siteUrl('fotos/draaien.png') }}" alt="{{ card.titlecardtwo }}" style="width:100%">
             </a>
             <div class="inhoud">
                 <h4 class="kop"><b>{{ card.titlecardtwo }}</b></h4>
@@ -24,7 +24,7 @@
 
         <div class="kaart">
             <a href="{{ card.linkUrl }}">
-                <img src="{{ card.imagecardone.one().url }}" alt="{{ card.titlecardone }}" style="width:100%">
+                <img src="{{ siteUrl('fotos/reizen.webp') }}" alt="{{ card.titlecardthree }}" style="width:100%">
             </a>
             <div class="inhoud">
                 <h4 class="kop"><b>{{ card.titlecardthree }}</b></h4>

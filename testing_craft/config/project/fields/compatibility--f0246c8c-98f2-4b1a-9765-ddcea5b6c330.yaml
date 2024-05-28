@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: productentitel
+handle: compatibility
 instructions: null
-name: productentitel
+name: compatibility
 searchable: false
 settings:
   byteLimit: null

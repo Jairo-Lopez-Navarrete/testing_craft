@@ -3,11 +3,15 @@
         .section('kenmerken')
         .all() %}
     
-    {% for kenmerk in kenmerken %}
-    <div class="kenmerk">
-        <img src="{{ kenmerk.afbeeldingkenmerken.one().url }}" alt="{{ kenmerk.titlekenmerken }}" width="100" height="100">
-        <h3>{{ kenmerk.titel }}</h3>
-        <p>{{ kenmerk.textkenmerken }}</p>
-    </div>
+    {% set afbeeldingen = ['mail.webp', 'headsetex.webp', 'levering.webp', 'retour.webp'] %}
+    
+    {% for key, kenmerk in kenmerken %}
+        {% set index = key % afbeeldingen|length %}
+        {% set afbeeldingNaam = afbeeldingen[index] %}
+        <div class="kenmerk">
+            <img src="{{ siteUrl('fotos/' ~ afbeeldingNaam) }}" alt="{{ kenmerk.titlekenmerken }}" width="100" height="100">
+            <h3>{{ kenmerk.titel }}</h3>
+            <p>{{ kenmerk.textkenmerken }}</p>
+        </div>
     {% endfor %}
 </div>

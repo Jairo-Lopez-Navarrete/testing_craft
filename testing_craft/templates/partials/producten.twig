@@ -1,25 +1,167 @@
-<div class="productcontainer">
-    {% for product in producten %}
-    <div class="product" data-prijs="{{ product.productenprijs }}" data-gewicht="{{ product.productengewicht }}" data-gebruik="{{ product.productengebruik }}">
-        <a href="{{ product.url }}"> <img src="{{ product.productenafbeelding }}" alt="{{ product.productentitel }}" class="product-afbeelding"></a>
-        <h3 class="product-titel"><a href="{{ product.url }}">{{ product.productentitel }}</a></h3>
-        <p class="product-info">{{ product.producteninfo }}</p>
-        <p class="product-info">{{ product.productenbatterij }} </p>
-        <p class="product-info"> {{ product.productengewicht }} gram</p>
-        <p class="product-prijs">{{ product.productenprijs }}</p>
-        <button class="product-button">{{ product.productenbekijkbutton }}</button>
+{% set filter = craft.entries.section('filtersection').one() %}
+
+{% set perPage = 6 %}
+
+<div class="productpaginafilter">
+    <div class="filter-section">
+        <h1>{{filter.titelfilter}}</h1>
+        <div class="select-wrapper">
+            <label>
+                <select id="soortSelect" class="productselect">
+                    <option value="Alle">{{filter.titelfilter}}</option>
+                    <option value="Persoonlijk">{{filter.labelfilter3}}</option>
+                    <option value="Professioneel">{{filter.labelfilter2}}</option>
+                </select>
+            </label>
+        </div>
     </div>
-    {% endfor %}
+
+    <div class="filter-section">
+        <h1>{{filter.titelfilter2}}</h1>
+        <div class="select-wrapper">
+            <label>
+                <select id="prijsSelect" class="productselect">
+                    <option value="Alle">{{filter.labelfilter4}}</option>
+                    <option value="Goedkoop">{{filter.labelfilter5}}</option>
+                </select>
+            </label>
+        </div>
+    </div>
 </div>
 
-{% block content %}
-    <div class="product-list">
-        {% for product in products %}
-            {% include "components/product.html.twig" with {
-                title: product.productentitel,
-                price: product.productenprijs,
-                image: product.productenafbeelding,
-            } %}
-        {% endfor %}
-    </div>
-{% endblock %}
+<div id="product-list-container">
+    {% include 'partials/product_list.twig' with { currentPage: 1, perPage: perPage, soort: 'Alle', prijsklasse: 'Alle' } %}
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const soortSelect = document.getElementById('soortSelect');
+    const prijsSelect = document.getElementById('prijsSelect');
+
+    const applyFilters = () => {
+        const soort = soortSelect.value;
+        const prijsklasse = prijsSelect.value;
+        fetchProducts(1, soort, prijsklasse);
+    };
+
+    soortSelect.addEventListener('change', applyFilters);
+    prijsSelect.addEventListener('change', applyFilters);
+});
+
+function goToPage(page) {
+    const soort = document.getElementById('soortSelect').value;
+    const prijsklasse = document.getElementById('prijsSelect').value;
+    fetchProducts(page, soort, prijsklasse);
+}
+
+function fetchProducts(page, soort, prijsklasse) {
+    const params = new URLSearchParams({
+        page: page,
+        soort: soort,
+        prijsklasse: prijsklasse,
+    });
+
+    fetch(/?${params.toString()}, {
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+        }
+    })
+    .then(response => response.text())
+    .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const newProductList = doc.getElementById('product-list-container').innerHTML;
+        document.getElementById('product-list-container').innerHTML = newProductList;
+    })
+    .catch(error => console.error('Error:', error));
+}
+</script>
+
+<style>
+    .filter-section {
+        padding: 5rem;
+    }
+
+    .filters {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .filters label {
+        margin-right: 10px;
+    }
+
+
+    .productpaginafilter{
+        margin-top: 1rem;
+        display:flex;
+        justify-content: space-around;
+        align-items:center;
+    }
+
+    .pagination {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .pagination button {
+        padding: 10px 15px;
+        margin: 0 5px;
+        background: #007BFF;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .pagination button.active {
+        background: #0056b3;
+    }
+
+    .pagination button:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+    }
+
+    .productcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .product {
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+        width: calc(33.333% - 40px);
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .product img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .product h3 {
+        margin: 10px 0;
+    }
+
+    .product p {
+        margin: 5px 0;
+    }
+
+    .product button {
+        padding: 10px 15px;
+        background: #007BFF;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .product button:hover {
+        background: #0056b3;
+    }
+</style>

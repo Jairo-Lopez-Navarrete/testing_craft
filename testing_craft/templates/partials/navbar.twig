@@ -12,6 +12,7 @@
     </div>
     <a class="{{ currentPage == 'home' ? 'active' : '' }}" href="{{ siteUrl }}">{{ navbar.navhome }}</a>
     <a class="{{ currentPage == 'producten' ? 'active' : '' }}" href="{{ siteUrl('productenPagina') }}">{{ navbar.navproducten }}</a>
+    <a class="{{ currentPage == 'contact' ? 'active' : '' }}" href="{{ siteUrl('contactform') }}">{{ navbar.contactform }}</a>
     <a class="{{ currentPage == 'shop' ? 'active' : '' }}" href="{{ siteUrl('detailpagina') }}">{{ navbar.navshop }}</a>
     <div class="login">
         <a href="{{ siteUrl('login') }}">{{ navbar.navlogin }}</a>

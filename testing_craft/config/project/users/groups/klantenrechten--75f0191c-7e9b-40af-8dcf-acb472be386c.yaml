@@ -1,0 +1,6 @@
+description: 'je hebt rechten de detailpagina aan te passen'
+handle: klantenrechten
+name: Klantenrechten
+permissions:
+  - accesssitewhensystemisoff
+  - editusers

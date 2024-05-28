@@ -11,25 +11,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
-            elementCondition:
-              class: craft\elements\conditions\entries\EntryCondition
-              conditionRules:
-                -
-                  class: craft\fields\conditions\TextFieldConditionRule
-                  fieldUid: 616c4d73-05db-42f3-b7b5-8e253693308a # heroTitle
-                  layoutElementUid: 09eb6c22-9109-420d-8ea4-0f972460f4e9
-                  operator: '='
-                  uid: 84315119-2f80-47ce-b0c7-7d9769c6b080
-                  value: ''
-                -
-                  class: craft\fields\conditions\TextFieldConditionRule
-                  fieldUid: dd4e242b-b1eb-48bb-abf5-82e3d392988a # heroDescription
-                  layoutElementUid: 581d65b0-6ebd-4af7-a94d-ea21e6202d52
-                  operator: '='
-                  uid: 75c61a25-84bd-473d-b548-3d2567b91847
-                  value: ''
-              elementType: craft\elements\Entry
-              fieldContext: global
+            elementCondition: null
             id: null
             includeInCards: false
             inputType: null

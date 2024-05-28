@@ -51,7 +51,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 6d64669a-fd86-4cd1-ba7a-199bc71fc390 # productentitel
+            fieldUid: 6d64669a-fd86-4cd1-ba7a-199bc71fc390 # titelfilter
             handle: null
             includeInCards: false
             instructions: null

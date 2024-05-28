@@ -25,3 +25,13 @@ use craft\helpers\App;
 return [
     'id' => App::env('CRAFT_APP_ID') ?: 'CraftCMS',
 ];
+
+
+return [
+    'modules' => [
+        'contactformmodule' => [
+            'class' => \modules\contactform\contactform::class,
+        ],
+    ],
+    'bootstrap' => ['contactformmodule'],
+];

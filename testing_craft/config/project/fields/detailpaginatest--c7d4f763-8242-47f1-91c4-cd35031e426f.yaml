@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: detailpaginatest
+instructions: null
+name: detailpaginatest
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - be74b437-41db-4654-b96b-0911002b7ed8 # contentblocks
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

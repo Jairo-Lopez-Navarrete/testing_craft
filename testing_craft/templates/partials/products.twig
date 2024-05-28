@@ -1,16 +1,21 @@
 <div id="mijnDiv">
-    <h2 class="pvdm">Producten van de maand</h2>
     <div class="productcontainer">
-        {% set productSlugs = ['productone', 'producttwo', 'productthree'] %} {# Replace these slugs with the actual slugs of your products #}
+        {% set productSlugs = ['productone', 'producttwo', 'productthree'] %} {# Vervang deze slugs door de daadwerkelijke slugs van je producten #}
         {% set products = craft.entries()
             .section('products')
             .slug(productSlugs)
             .all() %}
         
-        {% for product in products %}
+        {% for key, product in products %}
         <div class="product">
             <a href="{{ product.url }}">
-                <img src="{{ product.imageproduct.one().url }}" alt="{{ product.titleproduct }}" class="product-afbeelding">
+                {% if key == 0 %}
+                    <img src="{{ siteUrl('fotos/bosequiet.jpg') }}" alt="{{ product.titleproduct }}" class="product-afbeelding">
+                {% elseif key == 1 %}
+                    <img src="{{ siteUrl('fotos/planton.jpg') }}" alt="{{ product.titleproduct }}" class="product-afbeelding">
+                {% elseif key == 2 %}
+                    <img src="{{ siteUrl('fotos/phoenix1.jpg') }}" alt="{{ product.titleproduct }}" class="product-afbeelding">
+                {% endif %}
             </a>
             <h3 class="product-titel">
                 <a href="{{ products.url }}">{{ product.titleproduct }}</a>

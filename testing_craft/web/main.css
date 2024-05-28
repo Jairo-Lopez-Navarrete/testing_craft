@@ -849,6 +849,7 @@ h5 {
     margin: 0 10px 20px;
   }
 }
+
 .buttonproductpagina {
   background-color: #0808dc;
   color: white;
@@ -1103,5 +1104,20 @@ a {
     font-size: 1rem;
   }
 }
+
+
+
+
+.filter-section{
+  padding: 50px 0 50px 0;
+}
+
+.productpaginafilter{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 
 /*# sourceMappingURL=main.css.map */

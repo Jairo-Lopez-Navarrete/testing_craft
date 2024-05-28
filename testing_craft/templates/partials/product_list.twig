@@ -1,0 +1,52 @@
+{% set currentPage = currentPage ?? 1 %}
+{% set perPage = perPage ?? 6 %}
+{% set soort = soort ?? 'Alle' %}
+{% set prijsklasse = prijsklasse ?? 'Alle' %}
+
+{% set productenQuery = craft.entries()
+    .section('product')
+    .limit(perPage)
+    .offset((currentPage - 1) * perPage) %}
+
+{% set producten = productenQuery.all() %}
+{% set totalProducts = productenQuery.count() %}
+{% set totalPages = (totalProducts / perPage) | round(0, 'ceil') %}
+
+{# Lijst van afbeeldingen #}
+{% set afbeeldingen = ['corsair1.jpg', 'appleairpods.jpg', 'beats.jpg', 'betablast1.jpg', 'razenkraken.jpg', 'sonic1.jpg'] %}
+
+{# Controleer of er producten zijn om weer te geven #}
+{% if producten|length %}
+    <div class="productcontainer">
+        {% for key, product in producten %}
+        {% set index = key % 6 %}
+        {% set afbeeldingNaam = afbeeldingen[index] %}
+        <div class="product" data-soort="{{ product.soort }}" data-prijsklasse="{{ product.prijsklasse }}">
+            <a href="{{ product.url }}">
+                <img src="{{ siteUrl('fotos/' ~ afbeeldingNaam) }}" alt="{{ product.productentitel }}" class="product-afbeelding">
+            </a>
+            <h3 class="product-titel"><a href="{{ product.url }}">{{ product.productentitel }}</a></h3>
+            <p class="product-info">{{ product.producteninfo }}</p>
+            <p class="product-info">{{ product.productenbatterij }} </p>
+            <p class="product-info"> {{ product.productengewicht }} gram</p>
+            <p class="product-prijs">{{ product.productenprijs }}</p>
+            <button class="product-button"><a class="{{ currentPage == 'shop' ? 'active' : '' }}" href="{{ siteUrl('detailpagina') }}">{{ product.productenbekijkbutton }}</a></button>
+        </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p>Geen producten gevonden.</p>
+{% endif %}
+
+<div class="pagination">
+    {# Vorige pagina knop #}
+    <button style="margin-right: 5px;" onclick="goToPage({{ currentPage - 1 }})" {{ currentPage == 1 ? 'disabled' : '' }}>&lt;</button>
+
+    {# Dynamische paginanummers #}
+    {% for page in 1..totalPages %}
+        <button style="margin-right: 5px;" onclick="goToPage({{ page }})" class="{{ currentPage == page ? 'active' : '' }}">{{ page }}</button>
+    {% endfor %}
+
+    {# Volgende pagina knop #}
+    <button style="margin-left: 5px;" onclick="goToPage({{ currentPage + 1 }})" {{ currentPage == totalPages ? 'disabled' : ''}}>&gt;</button>
+</div>

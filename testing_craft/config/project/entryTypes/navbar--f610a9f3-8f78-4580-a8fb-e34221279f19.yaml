@@ -66,6 +66,21 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 94971c33-b959-436e-ba32-3f1170cb87fe # contactform
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0304c0eb-e17d-4de0-a83e-5bd813f143c5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: d290de56-a73c-483c-ba19-8900196dc273 # logoImage
             handle: null
             includeInCards: false

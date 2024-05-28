@@ -39,3 +39,82 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cookiediv" id="cookieBanner">
+    <div class="cookie_align">
+        <h4 class="cookiealign">Deze website gebruikt cookies</h4>
+        <p class="cookiealign">We gebruiken cookies om je een betere bezoekerservaring te bieden. Klik op akkoord om
+            alle cookies te accepteren.</p>
+        <div class="cookieknoppen">
+            <button class="cookieknop" id="cookieAkkoord">AKKOORD</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .cookiediv {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cookie_align {
+        max-width: 800px;
+        text-align: center;
+    }
+
+    .cookiealign {
+        margin: 10px 0;
+    }
+
+    .cookieknoppen {
+        margin-top: 20px;
+    }
+
+    .cookieknop {
+        background-color: #007BFF;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .cookieknop:hover {
+        background-color: #0056b3;
+    }
+    
+</style>
+
+<script>
+    document.getElementById('cookieAkkoord').addEventListener('click', function() {
+        document.getElementById('cookieBanner').style.display = 'none';
+      
+    });
+</script>

@@ -7,7 +7,8 @@ settings:
   allowSelfRelations: false
   allowSubfolders: false
   allowUploads: true
-  allowedKinds: null
+  allowedKinds:
+    - image
   branchLimit: null
   defaultUploadLocationSource: 'volume:c4ed4c35-300a-457f-b099-7d3aa69972c9' # afbeeldingnavbar
   defaultUploadLocationSubpath: null
@@ -16,19 +17,19 @@ settings:
   maxRelations: null
   minRelations: null
   previewMode: full
-  restrictFiles: false
+  restrictFiles: true
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:c4ed4c35-300a-457f-b099-7d3aa69972c9' # afbeeldingnavbar
   restrictedLocationSubpath: null
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources: '*'
   targetSiteId: null
-  validateRelatedElements: false
+  validateRelatedElements: true
   viewMode: list
 translationKeyFormat: null
 translationMethod: site

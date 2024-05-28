@@ -1,20 +1,54 @@
-<div>
-    <div class="pagination">
-        <button onclick="goToPage({{ currentPage - 1 }})" {{ currentPage == 1 ? 'disabled' : '' }}>&lt;</button>
-        {% for page in 1..totalPages %}
-            <button onclick="goToPage({{ page }})">{{ page }}</button>
-        {% endfor %}
-        <button onclick="goToPage({{ currentPage + 1 }})" {{ currentPage == totalPages ? 'disabled' : '' }}>&gt;</button>
-    </div>
-    <div class="product-list">
-        {% for product in producten %}
-            {% include 'components/product_card.html.twig' with {
-                title: product.productentitel,
-                price: product.productenprijs,
-                image: product.productenafbeelding,
-            } %}
-        {% endfor %}
-    </div>
+{# Haal de paginering gegevens op #}
+{% set paginationEntry = craft.entries()
+    .section('pagination')
+    .slug('paginationnumbers')
+    .one() %}
+
+{# Bepaal de huidige pagina en het totale aantal pagina's voor de producten #}
+{% set currentPage = craft.app.request.getPageNum() %}
+{% set totalPages = producten.totalPages %}
+
+{# Stel de paginanummers in op basis van de huidige pagina en het totale aantal pagina's #}
+{% if paginationEntry %}
+    {% set paginationNumbers = {
+        1: paginationEntry.number1,
+        2: paginationEntry.number2,
+        3: paginationEntry.number3,
+        4: paginationEntry.number4,
+        5: paginationEntry.number5
+    } %}
+{% else %}
+    {% set paginationNumbers = {
+        1: 1,
+        2: 2,
+        3: 3,
+        4: 4,
+        5: 5
+    } %}
+{% endif %}
+
+<div class="pagination">
+    {# Vorige pagina knop #}
+    <button style="margin-right: 5px;" onclick="goToPage({{ currentPage - 1 }})" {{ currentPage == 1 ? 'disabled' : '' }}>&lt;</button>
+
+    {# Dynamische paginanummers #}
+    {% for page in max(1, currentPage - 2)..min(totalPages, currentPage + 2) %}
+        <button style="margin-right: 5px;" onclick="goToPage({{ page }})" class="{{ currentPage == page ? 'active' : '' }}">{{ page }}</button>
+    {% endfor %}
+
+    {# Volgende pagina knop #}
+    <button style="margin-left: 5px;" onclick="goToPage({{ currentPage + 1 }})" {{ currentPage == totalPages ? 'disabled' : ''}}>&gt;</button>
+</div>
+
+<div class="product-list">
+    {% for product in producten %}
+        {{ dump(product.productenafbeelding) }}
+        {% include 'components/product_card.html.twig' with {
+            title: product.productentitel,
+            price: product.productenprijs,
+            image: product.productenafbeelding,
+        } %}
+    {% endfor %}
 </div>
 
 <script>
